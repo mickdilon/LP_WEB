@@ -1,0 +1,21 @@
+.clase_para_h1 {
+  color: blue; }
+
+.clase_para_p {
+  color: #F68B1F; }
+
+ul.stepper li.active .step-content {
+  display: block; }
+
+ul.stepper li div.step-content {
+  display: none; }
+
+.carousel-indicators {
+  position: initial !important;
+  margin-top: 24pt !important; }
+
+.carousel-indicators .active {
+  background-color: #454545 !important; }
+
+.carousel-indicators li {
+  background-color: #BEBEBE !important; }

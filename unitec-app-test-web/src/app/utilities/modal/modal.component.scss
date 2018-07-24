@@ -1,0 +1,14 @@
+  .modal-fluid { 
+    max-width: none;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .modal-content{
+    //min-height: calc(100vh - 20px);
+    min-height: calc(100vh);
+  } 
+
+  .modal-body {
+    padding: 0!important;
+  }

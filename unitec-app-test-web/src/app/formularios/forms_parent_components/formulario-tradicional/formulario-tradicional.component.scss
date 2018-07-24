@@ -1,0 +1,379 @@
+$input_verde: #00c851;
+$input_rojo: #cc0000;
+$input_azul: #0099CC;
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    //CSS
+    .cont-solvis {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    //CSS
+    .cont-solvis {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    //CSS
+    .cont-solvis {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    //CSS
+    .cont-solvis{
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+    
+  }
+
+
+
+
+.modal-fluid {
+    max-width: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+.fila-botones {
+    /*margin-top: 35px;*/
+    margin-top: 0px;
+}
+
+.btn-frm {
+    background: #F68B1F !important;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div_ciclo {
+    margin-top: 40px;
+}
+
+.oculta-ciclo {
+    display: none;
+}
+
+.muestra-ciclo {
+    display: block;
+}
+
+#div_revalidacion {
+    margin-top: 40px;
+}
+
+.oculta-revalidacion {
+    display: none;
+}
+
+.muestra-revalidacion {
+    display: block;
+}
+
+.contenedor-app {
+    padding: 0;
+}
+
+.row-content-menu-app {
+    max-height: 480px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    margin-top: -40px;
+    //padding-left: 15px;
+    //padding-right: 15px;
+    margin-left: 1px!important;
+    margin-right: 1px!important;
+}
+
+ ::ng-deep .col-lineas-negocio {
+    width: 100%;
+}
+
+ ::ng-deep #secLineasNegocio {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    //padding: 10px;
+    padding: 0px;
+}
+
+ ::ng-deep #secProductos {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+ ::ng-deep #secModalidades {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px;
+}
+
+ ::ng-deep #secCampus {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px;
+}
+
+ ::ng-deep #secCiclos {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0px;
+}
+
+
+/*Errores*/
+
+ ::ng-deep .row-error-app {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $input_rojo;
+}
+
+::ng-deep .md-form label.active {
+    font-size: .75rem;
+}
+
+
+/*Efecto para el error*/
+
+::ng-deep .hr-error {
+    border-top-color: $input_rojo !important;
+}
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 2;
+    color: $input_rojo;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
+/*Implementacion de iconos de formulario*/
+
+::ng-deep .md-form {
+    margin-bottom: 0px !important;
+}
+
+::ng-deep .iconos-form {
+    //margin-top: 20px;
+    margin-top: 14px;
+}
+
+::ng-deep .mic-form {
+    font-size: 1.95rem;
+}
+
+
+/*Animacion del microfono*/
+
+::ng-deep .rotate-mic {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+@-webkit-keyframes spinner {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
+
+@keyframes spinner {
+    from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
+}
+
+
+/*Animacion del borde*/
+
+@-webkit-keyframes rainbow {
+    0% {
+        border-color: $input_rojo;
+    }
+    50% {
+        border-color: $input_verde
+    }
+    75% {
+        border-color: $input_rojo;
+    }
+    100% {
+        border-color: $input_azul;
+    }
+}
+
+ ::ng-deep .rainbow_border {
+    border: 4px solid $input_rojo;
+    -webkit-animation: rainbow 1.5s infinite alternate;
+}
+::ng-deep input {
+    /*text-transform: lowercase !important;*/
+}
+/*Autocomplete*/
+
+::ng-deep .typeahead-menu {
+        //position: inherit !important;
+        top: 100%;
+        left: 0px;
+        z-index: 100;
+        background-color: whitesmoke !important;
+        width: 100%;
+        //margin-top: -15px;
+}
+
+
+::ng-deep .tt-dataset-domains {
+    padding: 10px;
+}
+
+::ng-deep .tt-selectable {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+//Estilos flechas
+::ng-deep .active-right-arrow {
+    color: #F68B1F !important;
+}
+
+::ng-deep .app-left-arrow {
+    color: #f68b1f!important;
+    .material-icons {
+        margin-left: -20px;
+    }
+}
+
+::ng-deep .app-rigth-arrow {
+    
+        .material-icons {
+            margin-right: -20px;
+        }
+    }
+//Modificacion inputs
+::ng-deep input {
+    padding-bottom: 0px;
+    margin-bottom: .5rem;
+}
+
+//Espacio entre inputs
+::ng-deep .form-group {
+    margin-bottom: 3rem !important;
+}
+
+::ng-deep .myFeedBackError {
+    font-size: .8rem;
+}
+
+::ng-deep #div_revalidacion 
+{
+    .form-group {
+        margin-bottom: 1.5rem !important;
+    }  
+}
+
+#paso2 {
+    margin-top: -10px;
+}

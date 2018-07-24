@@ -1,0 +1,12 @@
+.carousel-indicators{
+    position: initial !important;
+    margin-top: 24pt !important;
+}
+
+.carousel-indicators .active{
+    background-color: $carousel_indicator_active_color !important;
+}
+
+.carousel-indicators li {
+    background-color: $carousel_indicator_color !important;
+}

@@ -1,0 +1,177 @@
+//Variables principales del temaunitec
+//Colores pricipales
+$unitec_principal: #006fba;
+$unitec_principal_b: #0f406b;
+$unitec_secundario: #F68B1F;
+//Titulos y texto
+$titulos_principales: #757575;
+$titulos_secundarios: #FFFFFF;
+$texto_principal: #5a5a5a;
+$texto_secundario: #FFFFFF;
+$fondo-cuerpo-form: #FFFFFF;
+//Divisores y lineas
+$divisores_de_secciones: #333333;
+//Margenes
+$margen-superior-cuerpo: 10px;
+$margen-inferior-imagen: 15px;
+//Colores Thania
+$azul_unitec: #006fba;
+$boton_naranja_unitec: #f68b1f;
+$gris_titulos: #757575;
+$gris_texto: #333333;
+$gris_minicards: #f8f8f8;
+$iconos: #757575;
+$input_verde: #00c851;
+$input_rojo: #cc0000;
+$input_azul: #0099CC;
+$check_verde: #007E33;
+.sin-estado {
+    display: block;
+}
+
+.con-estado {
+    display: none;
+}
+
+::ng-deep .row-content-menu-app {
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: -10px;
+}
+
+
+/*Listado de divs par los estados*/
+
+::ng-deep .division-div {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: $gris_texto;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+::ng-deep .div-productos {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: $gris_texto;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+::ng-deep .division-div.active {
+    background-color: $azul_unitec;
+    color: white;
+    padding-left: 10px;
+}
+
+::ng-deep .div-productos.active {
+    background-color: $azul_unitec;
+    color: white;
+    padding-left: 10px;
+}
+
+::ng-deep .col-cuadros-contenedor.active {
+    background-color: $azul_unitec;
+    color: white;
+}
+
+::ng-deep .col-estados {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/*
+Temporalmente cambiamos para ponerle scroll
+::ng-deep .col-lineas-negocio {
+    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}*/
+
+::ng-deep .col-lineas-negocio {
+    display: none;
+    overflow: auto;
+}
+
+::ng-deep .col-cuadros-lineas.active {
+    background-color: $azul_unitec;
+    color: white;
+    .imagen-lineas-cuadros {
+        background-color: white !important;
+    }
+}
+
+::ng-deep .col-cuadros-lineas {
+    height: 150px;
+    background-color: $gris_minicards;
+    //margin-top: 10px;
+    //margin-bottom: 10px;
+}
+
+::ng-deep .col-cuadros-ciclos.active {
+    background-color: $azul_unitec;
+    color: white;
+}
+
+::ng-deep .col-cuadros-ciclos {
+    height: 150px;
+    background-color: $gris_minicards;
+    //margin-top: 10px;
+    //margin-bottom: 10px;
+}
+
+::ng-deep .col-cuadros-modalidades.active {
+    background-color: $azul_unitec;
+    color: white;
+    .imagen-lineas-cuadros {
+        background-color: white !important;
+    }
+}
+
+::ng-deep .col-cuadros-modalidades {
+    height: 150px;
+    background-color: $gris_minicards;
+    //margin-top: 10px;
+    //margin-bottom: 10px;
+}
+
+::ng-deep .col-cuadros-campus.active {
+    background-color: $azul_unitec;
+    color: white;
+    .imagen-lineas-cuadros {
+        background-color: white !important;
+    }
+}
+
+::ng-deep .col-cuadros-campus {
+    height: 150px;
+    background-color: $gris_minicards;
+    //margin-top: 10px;
+    //margin-bottom: 10px;
+}
+
+::ng-deep .col-cuadros-contenedor {
+    padding: 5px;
+}
+
+::ng-deep #secProductos {
+    display: none;
+}
+
+::ng-deep .col-cuadros-ciclos {
+    .titulo-lineas-cuadros {
+        font-size: .8rem;
+    }
+}
+
+::ng-deep .col-cuadros-ciclos.active {
+    background-color: $azul_unitec;
+    color: white;
+    .imagen-lineas-cuadros {
+        background-color: white !important;
+    }
+}

@@ -1,0 +1,110 @@
+$input_naranja : #f68b1f;
+$input_azul_unitec : #006fba;
+$input_inactive : #ffffff;
+$bold_title:400;
+
+.btn{
+    box-shadow: none;
+}
+
+.content-close{
+    background:#000;
+    height:24px;
+    width: 100%;
+}
+
+.titulo-formulario{
+    color: $input_azul_unitec;
+}
+
+// ::ng-deep a
+.div-btn-ingresar{
+    // color: $input_naranja;
+    width: 100%;
+}
+
+.btn_ingresar{
+    background: $input_naranja;
+    width: 97%;
+}
+
+.modal-footer, .modal-header{
+    border: none;
+    width: 100%;
+}
+
+.modal-footer{
+    margin-top: -35px;
+}
+
+.modal-header{
+    padding: 0;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
+}
+
+.btn-close{
+    color: $input_inactive;
+}
+
+.dominio{
+    font-size: .9rem;
+    padding-top: 1.75rem;
+}
+
+.titulo-modal{
+    font-weight:$bold_title;
+    color: $input_azul_unitec;
+    padding-top: .1rem;
+    font-size: 1.875rem;
+}
+
+.contenido-modal{
+    width:100%;
+    height: 100%;
+    margin: auto;
+    // overflow: hidden;
+}
+
+.aviso-privacidad{
+    padding-top: 0.875rem;
+    margin-bottom: 0;
+}
+
+.problema-cuenta{
+    margin-right: 15px;
+}
+
+.icono-biblioteca{
+    color: $input_azul_unitec;
+    font-size: 2.81rem;
+}
+
+#preload-library{
+    padding-bottom: 1rem;
+    i{
+        font-size: 3rem;
+    }
+}
+
+// .logo-formulario-biblioteca{
+//     background-color:$input_azul_unitec;
+//     mask-image: url(/assets/salud.svg);
+//     -webkit-mask-image: url(/assets/salud.svg);
+//     width: 48px;
+//     height: 48px;
+// }
+
+.content-logo{
+    text-align: center;
+    margin-left: 4px;
+    width: 100%;
+}
+
+.cuenta{
+    margin-bottom: 0;
+    margin-top: -.625rem;
+}

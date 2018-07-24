@@ -1,0 +1,48 @@
+<span [formGroup]="formularioPadre">
+    <div class="form-group" formGroupName="{{fase}}">
+        <div id="tabs" class="container_tabs">
+                <div class="row titulo-oferta">
+                    <div class="col-12 titulo-interes">{{ preguntaEstudioInteres }}</div>
+                    <div class="col-6 texto-cambio">{{ textoCambio }}</div>
+                </div>
+                <!-- Para la validacion de la linea de negocio -->
+                <div class="frm-estudio-interes myFeedBackError oculta-error">
+                    <div class="frm-estudio-interes-mensaje">
+                        Elige un area de interés
+                    </div>
+                </div>
+                <!-- Termina la validacion de linea de negocio -->
+                <!-- Div de la linea de interes -->
+                <div id="div_linea_interes"><!-- Se cambia el contenido de este div-->
+                    <div id="secLineas" class="tabs_content">
+                        <div 
+                            *ngFor="let lineas of lineasNegocio; let i = index;"
+                            class="division-div" 
+                            value="Administración Empresas"
+                            (click)="getProductosDeLinea($event,lineas.id)"
+
+                        >
+                            {{ lineas.name }}
+                        </div>
+                    </div>
+                    <!-- Div de las carreras -->
+                    <div id="secCarreras" class="tabs_content">
+                    </div>
+                    <!-- Div de las modalidades -->
+                    <div id="secModalidades" class="tabs_content">
+                    </div>
+                    <!-- Div de los campus -->
+                    <div id="secCampus" class="tabs_content">
+                    </div>
+                    <!-- Estudio seleccionado -->
+                    <div id="secEstudio" class="tabs_content">
+                        <span class="carrera-resultado">{{ carreraResultado }}</span> 
+                        <span class="texto-resultado"> en modalidad</span>
+                        <span class="modalidad-resultado">{{ modalidadResultado }}</span> 
+                        <span class="texto-resultado">en campus</span> 
+                        <span class="campus-resultado">{{ campusResultado }}</span>
+                    </div>
+                </div>
+        </div>
+    </div>
+</span>

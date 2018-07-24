@@ -1,0 +1,492 @@
+    1  ll
+    2  ls
+    3  su
+    4  su
+    5  sudo
+    6  su
+    7  npm install -g grunt-cli
+    8  sudo npm install -g grunt-cli
+    9  ssh
+   10  ssh 104.130.101.192@Dev20Unitec17
+   11  ssh Dev20Unitec17@104.130.101.192
+   12  ssh Dev20Unitec17@104.130.101.192
+   13  ssh Dev20Unitec17@104.130.101.192
+   14  ssh Dev20Unitec17@104.130.101.192
+   15  cd /Applications/XAMPP/
+   16  cd htdocs
+   17  dir
+   18  ls
+   19  cd local.unitec2017/
+   20  ls
+   21  cd wp-content/
+   22  ls
+   23  cd angular/
+   24  cd unitec-app/
+   25  ls
+   26  ls -l
+   27  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   28  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   29  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   30  ssh Dev20Unitec17@104.130.101.192
+   31  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   32  ng serve
+   33  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   34  ssh Dev20Unitec17@104.130.101.192
+   35  ng serve
+   36  ssh Dev20Unitec17@104.130.101.192
+   37  ll
+   38  la
+   39  ls
+   40  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   41  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   42  ssh Dev20Unitec17@104.130.101.192
+   43  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   44  ssh Dev20Unitec17@104.130.101.192
+   45  cd /Applications/XAMPP/
+   46  ll
+   47  ls
+   48  cd xamppfiles/
+   49  dir
+   50  ls
+   51  cd htdocs/
+   52  ls
+   53  cd local.unitec2017/
+   54  cd wp-content/
+   55  cd angular/
+   56  l
+   57  ls
+   58  cd unitec-app/
+   59  ls
+   60  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   61  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   62  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   63  ssh Dev20Unitec17@104.130.101.192
+   64  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   65  ssh Dev20Unitec17@104.130.101.192
+   66  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   67  ssh Dev20Unitec17@104.130.101.192
+   68  cd /Applications/XAMPP/
+   69  cd htdocs/
+   70  cd wp-content/
+   71  cd local.unitec2017/
+   72  cd wp-content/
+   73  cd unitec-app/
+   74  cd angular/
+   75  cd unitec-app/
+   76  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   77  ssh Dev20Unitec17@104.130.101.192
+   78  cd /Applications/XAMPP/
+   79  cd htdocs/
+   80  cd wp-content/
+   81  cd local.unitec2017/
+   82  cd wp-content/
+   83  cd angular/
+   84  cd unitec-app/
+   85  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   86  ssh Dev20Unitec17@104.130.101.192
+   87  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   88  ssh Dev20Unitec17@104.130.101.192
+   89  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   90  ssh Dev20Unitec17@104.130.101.192
+   91  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   92  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   93  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   94  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   95  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+   96  ssh Dev20Unitec17@104.130.101.192
+   97  ll
+   98  ls
+   99  cd ..
+  100  pwd
+  101  cd ..
+  102  pwd
+  103  cd grunt
+  104  ls
+  105  grunt
+  106  npm install
+  107  grunt
+  108  grunt
+  109  ll
+  110  ls
+  111  ll
+  112  ls
+  113  cd ..
+  114  cd angular/
+  115  cd unitec-app/
+  116  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  117  cd ..
+  118  ls
+  119  ls
+  120  cd ..
+  121  ls
+  122  cd grunt/
+  123  ls
+  124  ssh Dev20Unitec17@104.130.101.192
+  125  ssh Dev20Unitec17@104.130.101.192
+  126  cd /Applications/XAMPP/htdocs/local.unitec2017/wp-content
+  127  dir
+  128  ll
+  129  ls
+  130  cd grunt
+  131  cls
+  132  cler
+  133  clear
+  134  dir
+  135  ls
+  136  grunt
+  137  ssh Dev20Unitec17@104.130.101.192
+  138  ssh Dev20Unitec17@104.130.101.192
+  139  cd ..
+  140  ssh Dev20Unitec17@104.130.101.192
+  141  ssh Dev20Unitec17@104.130.101.192
+  142  ssh Dev20Unitec17@104.130.101.192
+  143  ssh Dev20Unitec17@104.130.101.192
+  144  ll
+  145  dir
+  146  pwd
+  147  cd grunt/
+  148  dir
+  149  ls
+  150  grunt uglify
+  151  ssh Dev20Unitec17@104.130.101.192
+  152  sudo nano /etc/hosts
+  153  cd /Applications/XAMPP/
+  154  dc htdocs
+  155  ls
+  156  cd htdocs
+  157  ls
+  158  cd local.unitec.mx/
+  159  cd wp-content/
+  160  cd themes/
+  161  cd temaunitec/
+  162  dir
+  163  ls
+  164  cd ..
+  165  ls
+  166  grunt uglify
+  167  ssh Dev20Unitec17@104.130.101.192
+  168  cls
+  169  clear
+  170  ssh Dev20Unitec17@104.130.101.192
+  171  ssh Dev20Unitec17@104.130.101.192
+  172  cd /Applications/
+  173  cd XAMPP/
+  174  dir
+  175  ls
+  176  cd htdocs
+  177  dir
+  178  ls
+  179  cd local.unitec
+  180  cd local.unitec2017/
+  181  cls
+  182  clear
+  183  ls
+  184  cd wp-content/
+  185  cd angular/
+  186  ls
+  187  cd ..
+  188  cd grunt
+  189  ls
+  190  grunt sass
+  191  npm install grunt-contrib-sass --save-dev
+  192  sudo npm install grunt-contrib-sass --save-dev
+  193  grunt sass
+  194  sudo gem install -n /usr/local/bin sass
+  195  grunt sass
+  196  grunt sass --force
+  197  grunt sass
+  198  sudo apt-get install ruby-full
+  199  sudo gem install sass
+  200  grunt sass
+  201  sudo gem install sass
+  202  ssh Dev20Unitec17@104.130.101.192
+  203  pwd
+  204  cd /Applications/XAMPP/htdocs
+  205  cd local.unitec2017/
+  206  dir
+  207  ls
+  208  cd wp-content/
+  209  ls
+  210  cd grunt/
+  211  ls
+  212  grunt uglify
+  213  ssh Dev20Unitec17@104.130.101.192
+  214  ssh Dev20Unitec17@104.130.101.192
+  215  ssh Dev20Unitec17@104.130.101.192
+  216  ssh Dev20Unitec17@104.130.101.192
+  217  cd /
+  218  cd Applications/XAMPP/
+  219  cd htdocs
+  220  cd local.unitec2017/
+  221  ls
+  222  cd wp-content/
+  223  dir
+  224  ls
+  225  cd grunt
+  226  ls
+  227  grunt sass
+  228  grunt cssmin
+  229  grunt sass
+  230  grunt cssmin
+  231  ssh Dev20Unitec17@104.130.101.192
+  232  ssh Dev20Unitec17@104.130.101.192
+  233  ll
+  234  ls
+  235  pwd
+  236  npm install dr-css-inliner
+  237  phantomjs index.js http://www.mydomain.com/index.html -w 350 -h 480 -m -o index-mobile.html
+  238  npm install phantomjs
+  239  phantomjs index.js http://www.mydomain.com/index.html -w 350 -h 480 -m -o index-mobile.html
+  240  grunt penthouse
+  241  grunt penthouse
+  242  grunt penthouse
+  243  npm install grunt-critical-css --save-dev
+  244  ssh Dev20Unitec17@104.130.101.192
+  245  ssh Dev20Unitec17@104.130.101.192
+  246  ssh Dev20Unitec17@104.130.101.192
+  247  cd Applications/XA
+  248  ssh Dev20Unitec17@104.130.101.192
+  249  pwd
+  250  cd ..
+  251  cd ..
+  252  ls
+  253  cd Applications/
+  254  cd XAMPP/
+  255  cd htdocs
+  256  dir
+  257  ls
+  258  cd local.unitec2017/
+  259  ls
+  260  lscd wp-content/themes/temaunitec
+  261  cd ..
+  262  cd grunt
+  263  ls
+  264  cd local.unitec2017/
+  265  cd wp-content/
+  266  cd grunt/
+  267  ls
+  268  grunt sass
+  269  grunt cssmin
+  270  grunt sass
+  271  grunt cssmin
+  272  grunt sass
+  273  grunt cssmin
+  274  cd ..
+  275  cd angular/
+  276  cd unitec-app/
+  277  ls
+  278  ll
+  279  ls
+  280  cd ..
+  281  ll
+  282  ls
+  283  cd unitec-app/
+  284  ls
+  285  cls
+  286  clear
+  287  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  288  pwd
+  289  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  290  pwd
+  291  cd ..
+  292  cd calculadora/
+  293  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  294  ll
+  295  ls
+  296  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  297  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  298  pwd
+  299  cd ..
+  300  cd unitec-app/
+  301  cd unitec-app/
+  302  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  303  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  304  ssh Dev20Unitec17@104.130.101.192
+  305  /Users/julio/Documents/RESPALDO\ HP/DOUMENTOSS/PROYECTO\ SEO\ ROI\ 2017/Junta\ de\ ROI_25_10_2017 ; exit;
+  306  ssh Dev20Unitec17@104.130.101.192
+  307  ssh Dev20Unitec17@104.130.101.192
+  308  cd /Applications/XAMPP/htdocs/local.unitec2017/
+  309  ls
+  310  cd wp-content/
+  311  ls
+  312  cd angular/
+  313  ls
+  314  cd unitec-app/
+  315  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  316  ssh Dev20Unitec17@104.130
+  317  ll
+  318  cd /Applications/XAMPP/htdocs/local.unitec2017/
+  319  cd wp-content/angular/unitec-app/
+  320  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  321  cd ..
+  322  cd calculadora/
+  323  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  324  ssh Dev20Unitec17@104.130.101.192
+  325  ssh Dev20Unitec17@104.130.101.192
+  326  ssh Dev20Unitec17@104.130.101.192
+  327  ssh Dev20Unitec17@104.130.101.192
+  328  ssh Dev20Unitec17@104.130.101.192
+  329  cd /Applications/
+  330  cd XAMPP/
+  331  cd htdocs
+  332  ll
+  333  ls
+  334  cd local.unitec2017/
+  335  ll
+  336  cd wp-content/
+  337  cd angular/
+  338  ls
+  339  cd unitec-app/
+  340  ls
+  341  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  342  ssh Dev20Unitec17@104.130.101.192
+  343  ssh Dev20Unitec17@104.130.101.192
+  344  cd /Applications/XAMPP/htdocs
+  345  ll
+  346  ls
+  347  cd local.unitec.mx/
+  348  cd wp-content/
+  349  ls
+  350  cd themes/
+  351  ls
+  352  pwd
+  353  cd temaunitec/
+  354  ls
+  355  cd ..
+  356  pwd
+  357  grunt uglify
+  358  ssh Dev20Unitec17@104.130.101.192
+  359  ssh Dev20Unitec17@104.130.101.192
+  360  ssh Dev20Unitec17@104.130.101.192
+  361  cd /Applications/
+  362  cd XAMPP/
+  363  cd htdocs
+  364  cd local.unitec2017/
+  365  cd wp-content/
+  366  cd angular/
+  367  cd unitec-app/
+  368  ls
+  369  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  370  cd ..
+  371  pwd
+  372  cd ..
+  373  cd grunt
+  374  ls
+  375  grunt sass
+  376  grunt cssmin
+  377  pwd
+  378  cd ..
+  379  cd angular/
+  380  ls
+  381  cd unitec-app/
+  382  ng serve -o
+  383  ssh Dev20Unitec17@104.130.101.192
+  384  node -v
+  385  ssh Dev20Unitec17@104.130.101.192
+  386  ssh Dev20Unitec17@104.130.101.192
+  387  pwd
+  388  cd /Applications/XAMPP/htdocs
+  389  ls
+  390  cd local.unitec2017/
+  391  ls
+  392  cd wp-content/
+  393  cd angular/
+  394  ls
+  395  ssh Dev20Unitec17@104.130.101.192
+  396  ssh Dev20Unitec17@104.130.101.192
+  397  ssh Dev20Unitec17@104.130.101.192
+  398  ssh Dev20Unitec17@104.130.101.192
+  399  ssh Dev20Unitec17@104.130.101.192
+  400  exit
+  401  cd /Applications/XAMPP/htdocs/local.unitec2017/wp-content/
+  402  ll
+  403  ls
+  404  cd angular/
+  405  ls
+  406  cd unitec-app/
+  407  ls
+  408  cl
+  409  cls
+  410  clear
+  411  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  412  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  413  ssh Dev20Unitec17@104.130.101.192
+  414  ll
+  415  cd /Applications/
+  416  ll
+  417  ls
+  418  cd XAMPP/
+  419  ls
+  420  cd htdocs
+  421  cd local.unitec2017/
+  422  ll
+  423  ls
+  424  pwd
+  425  cd wp-content/
+  426  cd angular/
+  427  ls
+  428  cd unitec-app/
+  429  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  430  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  431  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  432  ssh Dev20Unitec17@104.130.101.192
+  433  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  434  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  435  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  436  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  437  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  438  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  439  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  440  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  441  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  442  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  443  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  444  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  445  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  446  centos
+  447  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  448  ssh Dev20Unitec17@104.130.101.192
+  449  ssh Dev20Unitec17@104.130.101.192
+  450  ssh Dev20Unitec17@104.130.101.192
+  451  ssh Dev20Unitec17@104.130.101.192
+  452  exit
+  453  cd /Applications/
+  454  cd XAMPP/
+  455  cd htdocs
+  456  cd local.unitec2017/
+  457  ll
+  458  ls
+  459  cd wp-content/
+  460  ls
+  461  cd angular/
+  462  cd unitec-app/
+  463  ng build --prod --aot --no-sourcemap --verbose --output-hashing none
+  464  exit
+  465  ssh Dev20Unitec17@104.130.101.192
+  466  ssh Dev20Unitec17@104.130.101.192
+  467  ssh Dev20Unitec17@104.130.101.192
+  468  ssh Dev20Unitec17@104.130.101.192
+  469  ts
+  470  ll
+  471  cd /Applications/XAMPP/htdocs
+  472  dir
+  473  ls
+  474  cd local.unitec2017/wp-content/angular/unitec-app/
+  475  ll
+  476  ls
+  477  ts
+  478  tsc -v
+  479  npm install -g typescript@latest --save
+  480  sudo npm install -g typescript@latest --save
+  481  tsc -v
+  482  npm install -g npm-check-updates
+  483  sudo npm install -g npm-check-updates
+  484  ncu
+  485  npm update
+  486  ncu
+  487  ncu -u
+  488  npm update
+  489  ls
+  490  ls
+  491  pwd
+  492  history > comandos.txt

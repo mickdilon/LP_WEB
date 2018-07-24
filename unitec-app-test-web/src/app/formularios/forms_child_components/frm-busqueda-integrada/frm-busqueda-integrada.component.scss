@@ -1,0 +1,27 @@
+$input_buscador: #757575;
+$input_color_primary : #0099CC;
+
+.card-title{
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.card-text{
+    color: $input_buscador;
+    font-weight: 300;
+}
+
+::ng-deep .busqueda-integrada :focus{
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+    border:0;
+    outline: 0;
+}
+
+.busqueda-integrada{
+    border-top: 1px solid $input_color_primary !important;
+    border-bottom: 1px solid $input_color_primary !important;
+    border-left: 1px solid $input_color_primary !important;
+    border-right: 1px solid $input_color_primary !important;
+}

@@ -1,0 +1,34 @@
+$grayLight: #CCC;
+::ng-deep .input-search-sidenav::-webkit-input-placeholder {
+    color: $grayLight;
+    text-transform: initial !important;
+}
+::ng-deep .input-search-sidenav::-moz-placeholder { /* Firefox 19+ */
+color: $grayLight;
+text-transform: initial !important;
+}
+::ng-deep .input-search-sidenav::-ms-input-placeholder { /* IE 10+ */
+color: $grayLight;
+text-transform: initial !important;
+}
+::ng-deep .input-search-sidenav::-moz-placeholder { /* Firefox 18- */
+color: $grayLight;
+text-transform: initial !important;
+}
+
+::ng-deep .input-search-sidenav::placeholder { /* Firefox 18- */
+color: $grayLight;
+text-transform: initial !important;
+}
+
+ /*EStilos para tyeahead*/
+ /*::ng-deep .typeahead-menu {
+    position: "absolute";
+    background: "white";
+    width: "calc(100% + 40px) !important";
+    top: "101% !important";
+    left: "-1px !important";
+    padding: "0 16px";
+    z-index: "100";
+    display: "none";
+ }*/

@@ -1,0 +1,113 @@
+<div class="container BuscadorGCS">
+    <span class="icon-u-cerrar pull-right mdlclose mdlc" data-dismiss="modal"></span>
+    <div>
+        <div class="logoBuscador text-center">
+            <div>
+                <!-- <img src="//www.unitec.mx/mob/wp-content/themes/temaunitec/assets/frontend/img/header/logo.svg">-->
+            </div>
+        </div>
+
+        <!-- Aqui comienza el formulario del buscador -->
+        <form [formGroup]="formGCS">
+            <div formGroupName="faseUno">
+                <div class="input-group newSearch">
+                    <input type="search" placeholder="  Buscar ..." class="inputGCS" id="frm_GCS" (keydown)="keyDownFunction($event)" formControlName="frm_GCS" autocomplete="off">
+                    <span class="input-group-addon">
+                        <span *ngIf="formGCS.get('faseUno.frm_GCS').value == ''">
+                            <span *ngIf="whatsbrowser == 'Chrome'" class="icon-u-microfono microfono" (click)="mic()" id="micGCS">
+                                <span class="path1"></span><span class="path2"></span>
+                            </span>
+                        </span>
+                        <span *ngIf="formGCS.get('faseUno.frm_GCS').value != ''">
+                            <span class="icon-u-cerrar" (click)="setField('')"></span>
+                        </span>
+                    </span>
+                </div>  
+            </div>
+        </form>
+
+        <div id="preloadBuscador" class="text-center" style="display:none">
+            <svg width='120px' height='120px' xmlns="//www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-default"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(0 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-1s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(30 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.9166666666666666s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(60 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.8333333333333334s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(90 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.75s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(120 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.6666666666666666s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(150 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.5833333333333334s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(180 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.5s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(210 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.4166666666666667s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(240 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.3333333333333333s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(270 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.25s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(300 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.16666666666666666s' repeatCount='indefinite'/></rect><rect  x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='#00b2ff' transform='rotate(330 50 50) translate(0 -30)'>  <animate attributeName='opacity' from='1' to='0' dur='1s' begin='-0.08333333333333333s' repeatCount='indefinite'/></rect></svg>
+        </div>
+
+        <!-- Aqui comienza el cintillo tabs Navegacion GCS -->
+        <!-- <div class="GCSCintillo" style="display: none"> -->
+            <!-- <span class="GCSNav">
+                <span id="" class="active">
+                    <a class="waves-light nopad" role="tab">TODO</a>
+                </span>
+                <span id="Licenciaturas">
+                    <a class="waves-light nopad" role="tab">LICENCIATURAS</a>
+                </span>
+                <span id="Ingenierias">
+                    <a class="waves-light nopad" role="tab">INGENIERIAS</a>
+                </span>
+            </span> -->
+            <section id="tabNav" class="tabs-search-angular mt-1 GCSCintillo">
+                <!-- Tab Navegacion -->
+                <i class="leftTabNav direccionales icon-u-tab-izquierda" style="display:none"></i>
+                <div class="tabs-wrapper" id="elementoConScroll">
+                    <ul class="nav classic-tabs" id="tabs-buscador" role="tablist">
+                        <li id="" dataPageMap="nivel-de-interes" class="nav-item param-filter-gcs">
+                            <a class=" waves-light active text-black waves-effect waves-light" data-toggle="tab" role="tab">TODO</a>
+                        </li>         
+                       <!--  <li id="Licenciaturas" dataPageMap="nivel-de-interes" class="nav-item param-filter-gcs">
+                            <a class=" waves-light waves-effect waves-light" data-toggle="tab" role="tab">LICENCIATURAS</a>
+                        </li>         
+                        <li id="Ingenierias" dataPageMap="nivel-de-interes" class="nav-item param-filter-gcs">
+                            <a class=" waves-light waves-effect waves-light" data-toggle="tab" role="tab">INGENIERIAS</a>
+                        </li> -->
+                        <!-- <li id="Campus" dataPageMap="nivel-de-interes" class="nav-item param-filter-gcs">
+                            <a class=" waves-light waves-effect waves-light" data-toggle="tab" role="tab">Campus Atizapan</a>
+                        </li>
+                        <li id="Carrera" dataPageMap="nivel-de-interes" class="nav-item param-filter-gcs">
+                            <a class=" waves-light waves-effect waves-light" data-toggle="tab" role="tab">Sistemas Computacionales</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <i class="rightTabNav direccionales icon-u-tab-derecha" style="display:none"></i>
+            </section>
+        <!-- </div> -->
+
+        
+        <!-- Aqui termina el cintillo tabs Navegacion GCS -->
+
+        <!-- Aqui comienza el cintillo dinamico tabs Navegacion GCS
+            <div class="GCSCintillo" style="display: none">
+                <span class="GCSNav" *ngFor="let filtro of filtros">
+                    <span id="{{filtro.id}}" "{{filtro.class}}">
+                        <a class=" waves-light nopad" role="tab">{{filtro.valor}}</a>
+                    </span>
+                </span>
+            </div>
+        Aqui termina el cintillo dinamico tabs Navegacion GCS -->
+
+        <!-- Aqui comienza la seccion de resultados -->
+        <div id="GCSResultados"> 
+            <div class="msgGCS" style="display: none">
+                <p class="msgResults">No se encontrarón resultados para tu busqueda<b></b></p>
+                <div class="clearfix"></div>
+                <b>Busquedas recientes en UNITEC...</b>
+            </div>
+            <!-- <div class="GCSresultItem" *ngFor="let item of itemsSearchResult">
+                <header>
+                    <span class="titulo" [innerHTML]='item["htmlTitle"]'></span><br>
+                    <a href="{{item['link']}}" class="link" [innerHTML]='item["link"]'>{{ item["link"] }}</a>
+                </header>
+                <section [innerHTML]='item["htmlSnippet"]'></section>
+            </div> -->
+            <div class="GCSresultItem"></div>
+        </div>
+        <!-- Aqui finaliza la seccion de resultados -->
+    </div>
+
+    <div class="text-center"  style="display: none">
+        <span class="icon-u-cerrar pull-right mdlclose" (click)="mic()"></span>
+        <section class="speachMic">   
+            <span class="icon-u-microfono microfono rotating" (click)="mic()" id="micGCS">
+                <span class="path1"></span><span class="path2"></span>
+            </span> 
+        </section>
+        <h3>Escuchando...</h3>
+    </div>        
+</div>

@@ -1,0 +1,138 @@
+<!-- Modal -->
+<div class="modal" id="modal_frm_app" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Cintillo para cerrar el formulario -->
+    <div id="head_close_modal">
+        <!-- <i id="icon-exit-form" class="material-icons">keyboard_arrow_left</i> -->
+    </div>
+    
+    <div class="modal-dialog modal-fluid" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header modal-header-formulario">
+                <div class="container contenedor-header-p">
+                    <!-- div para imagen de fondo -->
+                    <div class="row img-header-formulario">
+                    </div>
+                    <!-- div para el icono y el titulo -->
+                    <div class="row titulo-logo margen-desk-solvis">
+                        <div class="col-2 logo-formulario">
+                        </div>
+                        <div class="col-10 titulo-formulario d-none">
+                            <h1>{{ titulo_modal_formulario }}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header segundo paso -->
+            <div class="modal-header modal-header-app" style="display: none;">
+                <button type="button" class="close cerrar-modal" data-dismiss="modal" aria-label="Close">
+                    <!-- <i class="material-icons">close</i> -->
+                </button>
+                <div class="col-2 titulo-icono">
+                </div>
+                <div class="col-10 titulo-modal d-none">
+                    <h4 class="titulo modal-title w-100" id="myModalLabel">{{ titulo_modal_formulario }}</h4>
+                </div>
+
+            </div>
+            <!-- Header thank you page -->
+            <div class="modal-header modal-header-thankyou" style="display: none;">
+                <div class="container contenedor-header">
+                    <!-- div para imagen de fondo -->
+                    <div class="row img-header-thankyou">
+                    </div>
+                    <!-- div para el icono y el titulo -->
+                    <!-- <div class="row titulo-logo">
+                        <div class="col-2 logo-thankyou">
+                            ICONO
+                        </div>
+                        <div class="col-10 titulo-thankyou">
+                            <h2>Thank you page</h2>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <!--Body formulario-->
+            <div class="modal-body modal-body-form d-none">
+                <app-formulario-tradicional></app-formulario-tradicional>
+            </div>
+            <div class="modal-body a-c">
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+
+        </div>
+        <div class="col-4">
+<!-- Material form login -->
+<form>
+        <p class="h4 text-center mb-4">Acceso UNITEC - Carrer Cruising</p>
+        <!-- Material input access code -->
+        <div class="md-form">
+            <i class="fa fa fa-sign-in prefix grey-text"></i>
+            <input type="number" id="codigoEscuelaCRM" class="form-control">
+            <label for="codigoEscuelaCRM">Código de acceso</label>
+        </div>
+
+        <div class="alert alert-danger d-none msj-esc" style="color: red;">
+            <strong>Código no autorizado.</strong> 
+          </div>
+
+
+        <div class="text-center mt-4">
+            <button id="vld_cc" class="btn btn-default" type="submit" style="background:#f68b1f!important;cursor:pointer;">Ingresar</button>
+        </div>
+    </form>
+    <!-- Material form login -->
+        </div>
+        <div class="col-4">
+
+        </div>
+    </div>
+</div>            
+
+
+
+
+            </div>
+            <!-- Body thankyoupage -->
+            <div class="modal-body-thankyou" style="display: none;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 primer-texto-thankyou">
+                            <span id="nombre-thankyou"></span> <label id="txt-thanks">Gracias por proporcionarnos tus datos. En breve te enviaremos la información que nos solicitas de:</label>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-12 segundo-texto-thankyou">
+                            Compártenos tu promedio para conocer tu porcentaje de beca y tu colegiatura para:
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-12 tercer-texto-thankyou">
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mini-app">
+                            <div class="form-group row fila-botones">
+                                <div class="centered div-btn-continuar">
+                                    <!-- <button type="submit" class="btn btn-primary btn-frm" id="calcula-tu-beca" (click)="calculadora();">
+                                        CALCULA TU BECA
+                                    </button>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- Modal -->
+<!-- Button trigger modal
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_frm_app">
+    Modal formulario tradicional diseño app
+</button> -->

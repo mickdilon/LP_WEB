@@ -1,0 +1,1336 @@
+//Variables principales del temaunitec
+//Colores pricipales
+$unitec_principal: #006fba;
+$unitec_principal_b: #0f406b;
+$unitec_secundario: #F68B1F;
+//Titulos y texto
+$titulos_principales: #757575;
+$titulos_secundarios: #FFFFFF;
+$texto_principal: #5a5a5a;
+$texto_secundario: #FFFFFF;
+$fondo-cuerpo-form: #FFFFFF;
+//Divisores y lineas
+$divisores_de_secciones: #333333;
+//Margenes
+$margen-superior-cuerpo: 10px;
+$margen-inferior-imagen: 15px;
+//Colores Thania
+$azul_unitec: #006fba;
+$boton_naranja_unitec: #f68b1f;
+$gris_titulos: #757575;
+$gris_texto: #333333;
+$gris_minicards: #f8f8f8;
+$iconos: #757575;
+$input_verde: #00c851;
+$input_rojo: #cc0000;
+$input_azul: #0099CC;
+$check_verde: #007E33;
+/*Medidas para formulario*/
+$iput_border_bottom: 8px;
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    //CSS
+    .modal-header-formulario {
+        margin-top: -180px;
+    }
+
+    .modal-body-thankyou {
+        margin-top: -150px!important;
+    }
+    .titulo-icono {
+        margin-left: 300px;
+    }
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    //CSS
+    .modal-header-formulario {
+        margin-top: -180px;
+    }
+    .modal-body-thankyou {
+        margin-top: -150px!important;
+    }
+    .titulo-icono {
+        margin-left: 300px;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    //CSS
+    .modal-header-formulario {
+        margin-top: -180px;
+    }
+    .modal-body-thankyou {
+        margin-top: -150px!important;
+    }
+    .titulo-icono {
+        margin-left: 300px;
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    //CSS
+    .modal-header-formulario {
+        margin-top: -180px;
+    }
+    .modal-body-thankyou {
+        margin-top: -150px!important;
+    }
+    .titulo-icono {
+        margin-left: 300px;
+    }
+    
+  }
+
+//Media iphone 5
+@media screen and (max-width: 321px) {
+    /*Ajuste para iphone 5*/
+     ::ng-deep .hs-responsive-embed-youtube {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 43px !important;
+    }
+     ::ng-deep .margen-para-video {
+        margin-top: 20px !important;
+    }
+     ::ng-deep .titulo-formulario {
+         padding-left: 0 !important;
+        h1 {
+            font-size: 1.5em!important;
+        }
+    }
+    ::ng-deep .frm-revalidacion-label {
+        //color: #3373ff;
+        font-size: .9rem!important;
+    }
+
+    ::ng-deep .modal-body-form {
+        margin-top: 25px !important;
+    }
+}
+
+//Resoluciones galaxy   
+@media screen and (min-width: 321px) and (max-width: 361px) {
+    ::ng-deep .titulo-formulario {
+        padding-left: 0 !important;
+        h1 {
+            font-size: 1.5em!important;
+        }
+    }
+    ::ng-deep .mic-form {
+        font-size: 1.6rem!important;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    //CSS
+    .margen-desk-solvis {
+        margin-left:230px;
+    }
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    //CSS
+    .margen-desk-solvis {
+        margin-left:230px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    //CSS
+    .margen-desk-solvis {
+        margin-left:230px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    //CSS
+    .margen-desk-solvis {
+        margin-left:230px;
+    }
+    
+  }
+
+
+
+
+
+//Iphone 6 en adelante
+@media screen and (min-width: 321px) and (max-width: 720px) {
+     ::ng-deep .margen-para-video {
+        margin-top: 80px !important;
+    }
+}
+
+//Mixins
+//Aliniacion vertical
+@mixin vertical_align() {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.modal-fluid {
+    max-width: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+.modal-content {
+    min-height: calc(110vh - 20px);
+}
+
+.modal-body {
+    padding: 0!important;
+    background-color: $fondo-cuerpo-form;
+    //margin-top: $margen-superior-cuerpo;
+}
+
+.modal-body-thankyou {
+    padding: 0!important;
+    background-color: $fondo-cuerpo-form;
+    margin-top: $margen-superior-cuerpo;
+}
+
+.modal-header {
+    z-index: 10;
+    height: 220px;
+    border-bottom: none;
+}
+
+.cerrar-modal {
+    color: white;
+    font-size: 2.5rem;
+    opacity: 1;
+}
+
+//Clase para el row de la imagen del header del formulario
+.img-header-formulario {
+    height: 200px;
+    //background: url("//calidadacademica.mx/wp-content/uploads/2017/05/sidenav.jpg");
+    background-size: cover;
+    margin-bottom: $margen-inferior-imagen;
+    background-position: 50% 50%;
+}
+
+.img-header-thankyou {
+    height: 200px;
+    //background: url("//calidadacademica.mx/wp-content/uploads/2017/05/sidenav.jpg");
+    background-size: cover;
+    margin-bottom: $margen-inferior-imagen;
+    background-position: 50% 50%;
+}
+
+.contenedor-header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.contenedor-header-p {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.titulo-logo {}
+
+::ng-deep .logo-formulario {
+    @include vertical_align;
+    /*SVG como logo*/
+    /*background: url(/lp_web/assets/test.svg) no-repeat top center;
+    background-size: contain;*/
+    background-color: $azul_unitec;
+    //background-image: url(/lp_web/assets/test.svg);
+    mask: url(/lp_web/assets/test.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/test.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/test.svg);
+    -webkit-mask-image: url(/lp_web/assets/test.svg);
+}
+
+.logo-thankyou {
+    @include vertical_align;
+}
+
+::ng-deep .titulo-formulario {
+    @include vertical_align;
+    color: $unitec_principal;
+    padding-left: 0;
+    h1 {
+        //font-size: 2em;
+        font-size: 1.8em;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+}
+
+.titulo-thankyou {
+    @include vertical_align;
+    color: $unitec_principal;
+    padding-left: 0;
+    h2 {
+        font-size: 2.1rem;
+        font-weight: 400;
+        margin-left: 10px;
+    }
+}
+
+//Labels de inputs de formulario
+::ng-deep .md-form {
+    label {
+        text-transform: uppercase;
+        color: $gris_titulos;
+    }
+}
+
+//Asterisco de campos obligatorios
+::ng-deep .color-asterisco {
+    color: $titulos_principales;
+}
+
+::ng-deep input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid $input_azul !important;
+    border-color: $input_azul !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_contra1:focus:not([readonly]){
+    border-bottom: 1px solid $input_azul !important;
+    border-color: $input_azul !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_contra2:focus:not([readonly]){
+    border-bottom: 1px solid $input_azul !important;
+    border-color: $input_azul !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_celular:focus:not([readonly]){
+    border-bottom: 1px solid $input_azul !important;
+    border-color: $input_azul !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_tel_casa:focus:not([readonly]){
+    border-bottom: 1px solid $input_azul !important;
+    border-color: $input_azul !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep .typeahead-menu {
+    margin-top: -8px !important;
+}
+
+::ng-deep .myFeedBackError {
+    color: $input_rojo;
+}
+
+/*Quitamos el margen a los inputs para tomar las medidas de la especificacion de material design*/
+::ng-deep #frm_nombre {
+    margin-bottom: 8px!important;
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+::ng-deep #frm_apaterno {
+    margin-bottom: 8px!important;
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+::ng-deep #frm_amaterno {
+    margin-bottom: 8px!important;
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+::ng-deep .frm_mail_class {
+    margin-bottom: 8px!important;
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+::ng-deep #frm_contra1 {
+    margin-bottom: 8px!important;
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+::ng-deep #frm_contra2 {
+    margin-bottom: 8px!important;
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+::ng-deep #frm_celular {
+    margin-bottom: 8px!important;
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+
+::ng-deep #frm_tel_casa {
+    margin-bottom: 8px!important;
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+
+//Qutar el padding si ya esta lleno el campo padding-bottom: 0 !important;
+
+
+
+
+
+::ng-deep input[type=text]:focus:not([readonly]) {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+
+//Grosor de la linea de los inputs en el focus (color azul)
+::ng-deep #frm_contra1:focus:not([readonly])  {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_contra2:focus:not([readonly])  {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_celular:focus:not([readonly])  {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_tel_casa:focus:not([readonly])  {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_amaterno:focus:not([readonly]) {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_apaterno:focus:not([readonly]) {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_nombre:focus:not([readonly]) {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep .frm_mail_class:focus:not([readonly]) {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+::ng-deep #frm_mail:focus:not([readonly]) {
+    border-bottom-width: 1px !important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+
+
+
+/*
+::ng-deep #frm_celular:focus:not([readonly])+label {
+    color: $gris_texto!important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}
+
+::ng-deep .frm_mail_class:focus:not([readonly])+label {
+    color: $gris_texto!important;
+    box-shadow: none;
+    padding-bottom: 0!important;
+}*/
+
+/*Termia ajustes para material design*/
+
+::ng-deep .md-form label.active {
+    font-size: .7rem!important;
+}
+::ng-deep .md-form label {
+    color: #757575!important;
+}
+::ng-deep input[type=text].myError,
+#frm_email.myError,
+#frm_celular.myError,
+#frm_tel_casa.myError,
+#frm_contra1.myError,
+#frm_ccontra2.myError,
+input[type=password].myError,
+input[type=email].myError,
+input[type=url].myError,
+input[type=time].myError,
+input[type=date].myError,
+input[type=datetime-local].myError,
+input[type=tel].myError,
+input[type=number].myError,
+input[type=search-md].myError,
+input[type=search].myError {
+    border-bottom: 1px solid $input_rojo;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+::ng-deep #frm_contra1.myError{
+    border-bottom: 1px solid $input_rojo;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+::ng-deep #frm_contra2.myError{
+    border-bottom: 1px solid $input_rojo;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+::ng-deep #frm_celular.myError{
+    border-bottom: 1px solid $input_rojo;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+::ng-deep #frm_tel_casa.myError{
+    border-bottom: 1px solid $input_rojo;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+::ng-deep input[type=text]+label.myError,
+#frm_email+label.myError,
+input[type=password]+label.myError,
+input[type=email]+label.myError,
+input[type=url]+label.myError,
+input[type=time]+label.myError,
+input[type=date]+label.myError,
+input[type=datetime-local]+label.myError,
+input[type=tel]+label.myError,
+input[type=number]+label.myError,
+input[type=search-md]+label.myError,
+input[type=search]+label.myError {
+    color: $gris_titulos;
+}
+
+::ng-deep input[type=text]+label.myError+active,
+#frm_email+label.myError+active,
+input[type=password]+label.myError+active,
+input[type=email]+label.myError:active,
+input[type=url]+label.myError:active,
+input[type=time]+label.myError:active,
+input[type=date]+label.myError:active,
+input[type=datetime-local]+label.myError:active,
+input[type=tel]+label.myError:active,
+input[type=number]+label.myError:active,
+input[type=search-md]+label.myError:active,
+input[type=search]+label.myError:active {
+    color: $gris_titulos;
+}
+
+::ng-deep input[type=text]:focus:not([readonly])+label.myError,
+#frm_email:focus:not([readonly])+label.myError,
+input[type=password]:focus:not([readonly])+label.myError,
+input[type=email]:focus:not([readonly])+label.myError,
+input[type=url]:focus:not([readonly])+label.myError,
+input[type=time]:focus:not([readonly])+label.myError,
+input[type=date]:focus:not([readonly])+label.myError,
+input[type=datetime-local]:focus:not([readonly])+label.myError,
+input[type=tel]:focus:not([readonly])+label.myError,
+input[type=number]:focus:not([readonly])+label.myError,
+input[type=search-md]:focus:not([readonly])+label.myError,
+input[type=search]:focus:not([readonly])+label.myError {
+    color: $gris_titulos;
+}
+
+
+/*label focus*/
+
+::ng-deep input[type=text]+label,
+#frm_email+label,
+input[type=password]+label,
+input[type=email]+label,
+input[type=url]+label,
+input[type=time]+label,
+input[type=date]+label,
+input[type=datetime-local]+label,
+input[type=tel]+label,
+input[type=number]+label,
+input[type=search-md]+label,
+input[type=search]+label {
+    color: $gris_titulos !important;
+}
+
+
+/*termina label focus*/
+
+
+/*Label success*/
+
+::ng-deep input[type=text]+label.mySuccess,
+#frm_email+label.mySuccess,
+input[type=password]+label.mySuccess,
+input[type=email]+label.mySuccess,
+input[type=url]+label.mySuccess,
+input[type=time]+label.mySuccess,
+input[type=date]+label.mySuccess,
+input[type=datetime-local]+label.mySuccess,
+input[type=tel]+label.mySuccess,
+input[type=number]+label.mySuccess,
+input[type=search-md]+label.mySuccess,
+input[type=search]+label.mySuccess {
+    color: $gris_titulos !important;
+}
+
+
+
+::ng-deep input[type=text]+label.mySuccess:active,
+#frm_email+label.mySuccess:active,
+input[type=password]+label.mySuccess:active,
+input[type=email]+label.mySuccess:active,
+input[type=url]+label.mySuccess:active,
+input[type=time]+label.mySuccess:active,
+input[type=date]+label.mySuccess:active,
+input[type=datetime-local]+label.mySuccess:active,
+input[type=tel]+label.mySuccess:active,
+input[type=number]+label.mySuccess:active,
+input[type=search-md]+label.mySuccess:active,
+input[type=search]+label.mySuccess:active {
+    color: $gris_titulos;
+}
+
+::ng-deep input[type=text]:focus:not([readonly])+label.mySuccess,
+#frm_email:focus:not([readonly])+label.mySuccess,
+input[type=password]:focus:not([readonly])+label.mySuccess,
+input[type=email]:focus:not([readonly])+label.mySuccess,
+input[type=url]:focus:not([readonly])+label.mySuccess,
+input[type=time]:focus:not([readonly])+label.mySuccess,
+input[type=date]:focus:not([readonly])+label.mySuccess,
+input[type=datetime-local]:focus:not([readonly])+label.mySuccess,
+input[type=tel]:focus:not([readonly])+label.mySuccess,
+input[type=number]:focus:not([readonly])+label.mySuccess,
+input[type=search-md]:focus:not([readonly])+label.mySuccess,
+input[type=search]:focus:not([readonly])+label.mySuccess {
+    color: $gris_titulos !important;
+}
+
+//Termina label success
+::ng-deep input[type=text]:focus:not([readonly]).myError,
+#frm_email.myError,
+input[type=password]:focus:not([readonly]).myError,
+input[type=email]:focus:not([readonly]).myError,
+input[type=url]:focus:not([readonly]).myError,
+input[type=time]:focus:not([readonly]).myError,
+input[type=date]:focus:not([readonly]).myError,
+input[type=datetime-local]:focus:not([readonly]).myError,
+input[type=tel]:focus:not([readonly]).myError,
+input[type=number]:focus:not([readonly]).myError,
+input[type=search-md]:focus:not([readonly]).myError,
+input[type=search]:focus:not([readonly]).myError {
+    border-bottom: 1px solid $input_rojo !important;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+
+//Para celular
+::ng-deep #frm_contra1:focus:not([readonly]).myError{
+    border-bottom: 1px solid $input_rojo !important;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+::ng-deep #frm_contra2:focus:not([readonly]).myError{
+    border-bottom: 1px solid $input_rojo !important;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+::ng-deep #frm_celular:focus:not([readonly]).myError{
+    border-bottom: 1px solid $input_rojo !important;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+::ng-deep #frm_tel_casa:focus:not([readonly]).myError{
+    border-bottom: 1px solid $input_rojo !important;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+/*Exito*/
+
+::ng-deep input[type=text].mySuccess,
+#frm_email.mySuccess,
+input[type=password].mySuccess,
+input[type=email].mySuccess,
+input[type=url].mySuccess,
+input[type=time].mySuccess,
+input[type=date].mySuccess,
+input[type=datetime-local].mySuccess,
+input[type=tel].mySuccess,
+input[type=number].mySuccess,
+input[type=search-md].mySuccess,
+input[type=search].mySuccess {
+    border-bottom: 1px solid $input_verde;
+    box-shadow: none;
+    padding-bottom: 0 !important;
+}
+
+::ng-deep #frm_celular.mySuccess {
+    border-bottom: 1px solid $input_verde;
+    box-shadow: none;
+    padding-bottom: 0 !important;  
+}
+
+::ng-deep #frm_tel_casa.mySuccess {
+    border-bottom: 1px solid $input_verde;
+    box-shadow: none;
+    padding-bottom: 0 !important;  
+}
+::ng-deep #frm_contra1.mySuccess {
+    border-bottom: 1px solid $input_verde;
+    box-shadow: none;
+    padding-bottom: 0 !important;  
+}
+::ng-deep #frm_contra2.mySuccess {
+    border-bottom: 1px solid $input_verde;
+    box-shadow: none;
+    padding-bottom: 0 !important;  
+}
+::ng-deep input[type=text]+label.mySuccess,
+#frm_email+label.mySuccess,
+input[type=password]+label.mySuccess,
+input[type=email]+label.mySuccess,
+input[type=url]+label.mySuccess,
+input[type=time]+label.mySuccess,
+input[type=date]+label.mySuccess,
+input[type=datetime-local]+label.mySuccess,
+input[type=tel]+label.mySuccess,
+input[type=number]+label.mySuccess,
+input[type=search-md]+label.mySuccess,
+input[type=search]+label.mySuccess {
+    color: $input_verde;
+}
+
+::ng-deep input[type=text]:focus:not([readonly])+label.mySuccess,
+#frm_email:focus:not([readonly])+label.mySuccess,
+input[type=password]:focus:not([readonly])+label.mySuccess,
+input[type=email]:focus:not([readonly])+label.mySuccess,
+input[type=url]:focus:not([readonly])+label.mySuccess,
+input[type=time]:focus:not([readonly])+label.mySuccess,
+input[type=date]:focus:not([readonly])+label.mySuccess,
+input[type=datetime-local]:focus:not([readonly])+label.mySuccess,
+input[type=tel]:focus:not([readonly])+label.mySuccess,
+input[type=number]:focus:not([readonly])+label.mySuccess,
+input[type=search-md]:focus:not([readonly])+label.mySuccess,
+input[type=search]:focus:not([readonly])+label.mySuccess {
+    color: $input_verde;
+}
+
+::ng-deep input[type=text]:focus:not([readonly]).mySuccess,
+#frm_email:focus:not([readonly]).mySuccess,
+input[type=password]:focus:not([readonly]).mySuccess,
+input[type=email]:focus:not([readonly]).mySuccess,
+input[type=url]:focus:not([readonly]).mySuccess,
+input[type=time]:focus:not([readonly]).mySuccess,
+input[type=date]:focus:not([readonly]).mySuccess,
+input[type=datetime-local]:focus:not([readonly]).mySuccess,
+input[type=tel]:focus:not([readonly]).mySuccess,
+input[type=number]:focus:not([readonly]).mySuccess,
+input[type=search-md]:focus:not([readonly]).mySuccess,
+input[type=search]:focus:not([readonly]).mySuccess {
+    border-bottom: 1px solid $input_verde !important;
+    box-shadow: none;
+}
+::ng-deep #frm_celular:focus:not([readonly]).mySuccess{
+    border-bottom: 1px solid $input_verde !important;
+    box-shadow: none;
+}
+::ng-deep #frm_tel_casa:focus:not([readonly]).mySuccess{
+    border-bottom: 1px solid $input_verde !important;
+    box-shadow: none;
+}
+::ng-deep #frm_contra1:focus:not([readonly]).mySuccess{
+    border-bottom: 1px solid $input_verde !important;
+    box-shadow: none;
+}
+::ng-deep #frm_contra2:focus:not([readonly]).mySuccess{
+    border-bottom: 1px solid $input_verde !important;
+    box-shadow: none;
+}
+//Terminan labels
+::ng-deep #continuar_politicas {
+    text-transform: uppercase;
+    color: $boton_naranja_unitec;
+}
+
+::ng-deep .div-btn-continuar {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+::ng-deep .btn-frm {
+    width: 100%;
+    margin: 0px;
+}
+
+::ng-deep .col-frm {
+    padding: 2px !important;
+}
+
+::ng-deep #div_revalidacion {
+    margin-top: 0px !important;
+}
+
+::ng-deep .hr-revalidacion {
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    margin-top: 10px;
+}
+
+::ng-deep .frm-revalidacion-label {
+    color: $gris_titulos;
+    font-size: 13px !important;
+}
+
+::ng-deep .frm-revalidacion-label {
+    font-size: 1.1rem!important;
+}
+
+::ng-deep [type=checkbox]:checked+label:before {
+    border-right: 2px solid $input_verde !important;
+    border-bottom: 2px solid $input_verde !important;
+}
+
+::ng-deep .frm-politicas {
+    margin-bottom: 10px;
+}
+
+
+/*Header del modal 2,3,4,n pasos*/
+
+.modal-header-app {
+    background-color: #006fba;
+    color: white;
+    height: 50px;
+    /*Borde del modal
+    border-left-color: #F68B1F;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-bottom-color: transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    z-index: 10;*/
+}
+
+.modal-header-thankyou {
+    //margin-top: 17px;
+    padding-top: 0;
+}
+
+.primer-texto-thankyou {
+    color: $unitec_principal;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#nombre-thankyou {
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.segundo-texto-thankyou {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: $gris_texto;
+}
+
+.tercer-texto-thankyou {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $gris_texto;
+    font-weight: bold;
+}
+
+.mini-app {
+    text-align: center;
+}
+
+::ng-deep .cerrar-modal {
+    color: white;
+    font-size: 2.5rem;
+    opacity: 1;
+    font-weight: lighter;
+    z-index: 999;
+}
+
+::ng-deep .titulo-icono {
+    padding-left: 0;
+    background-color: white;
+    //background-image: url(/lp_web/assets/test.svg);
+    mask: url(/lp_web/assets/test.svg) no-repeat 0% 50%;
+    -webkit-mask: url(/lp_web/assets/test.svg) no-repeat 0% 50%;
+    mask-image: url(/lp_web/assets/test.svg);
+    -webkit-mask-image: url(/lp_web/assets/test.svg);
+    height: 50px;
+    width: 50px;
+}
+
+::ng-deep .titulo-modal {
+    padding-left: 0;
+}
+
+::ng-deep .app-menu-title {
+    text-align: center;
+    color: $unitec_principal;
+    font-size: 1.2rem;
+}
+
+::ng-deep .app-rigth-arrow {
+    text-align: center;
+}
+
+::ng-deep .app-left-arrow {
+    text-align: center;
+}
+
+::ng-deep #divisor-menu-app {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 153, 204, 1)
+}
+
+::ng-deep .hs-responsive-embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    //padding-top: 25px;
+    //padding-top: 74px;
+    padding-top: 66px;
+}
+
+::ng-deep .hs-responsive-embed-youtube iframe {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+::ng-deep .margin-padding-video {
+    padding: 0;
+    margin-top: -42px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    height: auto !important;
+}
+
+//Orientacion del video
+@media screen and (orientation:landscape) {
+    .modal-header-formulario {
+        //height: 385px;
+    }
+    .modal-header-formulario-ytv {
+        height: 350px;
+    }
+    .margen-para-video {
+        margin-top: 100px;
+    }
+    .modal-header-form-img-h {
+        margin-top: 17px;
+    }
+}
+
+
+/*Iconos lineas de negocio*/
+
+::ng-deep .cuadro-lic {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/licenciatura.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/licenciatura.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/licenciatura.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/licenciatura.svg);
+    /*background-image: url(/lp_web/assets/licenciatura.svg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center bottom;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;*/
+}
+
+::ng-deep .cuadro-ing {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/ingenieria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/ingenieria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/ingenieria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/ingenieria.svg);
+    width: 108%;
+}
+
+::ng-deep .cuadro-salud {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/salud.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/salud.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/salud.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/salud.svg);
+    width: 108%;
+}
+
+::ng-deep .cuadro-pos {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/posgrado.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/posgrado.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/posgrado.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/posgrado.svg);
+    width: 108%;
+}
+
+::ng-deep .cuadro-prepa {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/preparatoria.svg);
+    width: 108%;
+}
+
+::ng-deep .titulo-lineas-cuadros {
+    width: 108%;
+}
+
+
+/*Clases modalidades*/
+
+::ng-deep .cuadro-pres {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/presencial.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/presencial.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/presencial.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/presencial.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-eje {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/ejecutiva.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/ejecutiva.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/ejecutiva.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/ejecutiva.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-enlinea {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/enlinea.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/enlinea.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/enlinea.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/enlinea.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+
+/*Cuadros de campus*/
+
+::ng-deep .cuadro-atz {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/atizapan.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-mar {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/marina.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-eca {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/ecatepec.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-gdl {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/guadalajara.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/guadalajara.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-leo {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/leon.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-rey {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/losreyes.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-sur {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/sur.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-cui {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/cuitlahuac.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-tol {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/toluca.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-qro {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/queretaro.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+::ng-deep .cuadro-onl {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/onl.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/onl.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/onl.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/onl.svg);
+    width: 108%;
+    cursor: pointer;
+}
+
+/*Ciclos*/
+
+::ng-deep .cuadro-periodo {
+    height: 50%;
+    height: 70%;
+    background-color: $titulos_principales;
+    mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/lp_web/assets/preparatoria.svg) no-repeat 50% 50%;
+    mask-image: url(/lp_web/assets/preparatoria.svg);
+    -webkit-mask-size: 70px 70px;
+    mask-size: 400px 600px;
+    -webkit-mask-image: url(/lp_web/assets/periodo.svg);
+    width: 108%;
+}
+
+.btn-frm {
+    background: #F68B1F !important;
+    font-size: 1.2em;
+}
+
+/*
+::ng-deep #cerrar_formulario_alpha {
+    color: snow;
+    position: absolute;
+    font-size: 35px;
+    align-content: right;
+    position: relative;
+    float: right;
+    background-color: rgba(0, 111, 186, .7);
+    margin-top: 33px;
+    -khtml-opacity: .50;
+    -moz-opacity: .50;
+    -ms-filter: ”alpha(opacity=50)”;
+    filter: alpha(opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+}*/
+/*
+#modal_frm_app {
+    margin-top: 30px;
+}*/
+
+::ng-deep #head_close_modal {
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 999;
+    /*Bordes*/
+    border-bottom-style: solid;
+    border-bottom-color: $gris_titulos;
+    border-bottom-width: thin;
+    border-bottom: -1px;
+    margin-bottom: -1px;
+}
+
+::ng-deep .header-wistia {
+    margin-top: 30px;
+    margin-bottom: -40px;
+}
+
+::ng-deep #icon-exit-form {
+    font-size: 2em;
+}
+
+.modal { -webkit-overflow-scrolling: auto; }

@@ -1,0 +1,47 @@
+$input_naranja : #f68b1f;
+$input_azul_unitec : #006fba;
+$bold_title:400;
+
+.radio-input{
+    width: 45%;
+    text-align: center;
+    cursor: pointer;
+}
+
+fieldset{
+    div{
+        label{
+            // padding-left: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .icon-profesor, .icon-alumno{
+            font-size: 1rem;  
+        }
+    }
+}
+
+.fix-error{
+    padding-left: 2.18rem;
+    padding-top: 0.625rem;
+}
+
+// fieldset{
+//     div.icon-alumno{
+//         background-color:$input_azul_unitec;
+//         mask-image: url(/assets/salud.svg);
+//         -webkit-mask-image: url(/assets/salud.svg);
+//         width: 20px;
+//         height: 20px;
+//         margin-right:2px;   
+//     }
+
+//     div.icon-profesor{
+//         background-color:$input_azul_unitec;
+//         mask-image: url(/assets/salud.svg);
+//         -webkit-mask-image: url(/assets/salud.svg);
+//         width: 20px;
+//         margin-right: 2px;
+//         height: 20px;       
+//     }
+// }

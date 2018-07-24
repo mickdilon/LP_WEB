@@ -1,0 +1,55 @@
+$color-dirty: #4285f4;
+$color-success: #3CFF33;
+$color-error: red;
+
+/*
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search-md],
+input[type=search] {
+    &:focus:not([readonly])+label.mySuccess {
+        color: $color-success;
+    }
+    &:focus:not([readonly]).mySuccess {
+        border-bottom: 1px solid $color-success;
+        box-shadow: 0 1px 0 0 $color-success;
+    }
+    &.mySuccess {
+        border-bottom: 1px solid $color-success;
+        box-shadow: 0 1px 0 0 $color-success;
+    }
+    &+label.mySuccess {
+        color: $color-success;
+    }
+    &:focus:not([readonly])+label.myError {
+        color: $color-error;
+    }
+    &:focus:not([readonly]).myError {
+        border-bottom: 1px solid $color-error;
+        box-shadow: 0 1px 0 0 $color-error;
+    }
+    &.myError {
+        border-bottom: 1px solid $color-error;
+        box-shadow: 0 1px 0 0 $color-error;
+    }
+    &+label.myError {
+        color: $color-error;
+    }
+}
+
+.asteriskDisplay {
+    color: $color-error !important;
+    display: none;
+}
+
+.myFeedBackError {
+    font-size: 8pt;
+    color: $color-error;
+}*/

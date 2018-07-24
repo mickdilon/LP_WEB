@@ -1,0 +1,13 @@
+<span [formGroup]="formularioPadre">
+    <div class="form-group" formGroupName="{{fase}}">
+        <div id="secEstado" class="tabs_content">
+            <div 
+                *ngFor="let estado of estados; let i = index;"
+                class="division-div"
+                (click)="muestraLineasDeNegocio(estado.name_id)"
+            >
+                {{ estado.name }}
+            </div>
+        </div>
+    </div>
+</span>

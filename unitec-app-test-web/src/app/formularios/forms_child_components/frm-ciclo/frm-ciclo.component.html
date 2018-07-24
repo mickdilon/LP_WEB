@@ -1,0 +1,27 @@
+<span [formGroup]="formularioPadre">
+<div class="form-group" formGroupName="{{fase}}">
+        <div class="md-form form-sm">
+        <select class="mdb-select frm-select-ciclo" 
+                id="frm_ciclo" 
+                formControlName="frm_ciclo" 
+                [ngClass]="{ 
+                    mySuccess : formularioPadre.get(inputComponent).valid,
+                    myError   : !formularioPadre.get(inputComponent).valid && formularioPadre.get(inputComponent).dirty
+        }">
+        </select>
+            <label [ngClass]="{ 
+                       mySuccess : formularioPadre.get(inputComponent).valid,
+                       myError   : formularioPadre.get(inputComponent).invalid && formularioPadre.get(inputComponent).dirty
+                   }"
+                   for="frm_ciclo">Fecha de ingreso: 
+                   <span [ngClass]="{ 'color-asterisco':true, asteriskDisplay : !asterisk }">*</span>
+</label>
+<div class="frm-ciclo myFeedBackError con-ciclo">
+    <div>
+        ¿Cuando deseas ingresar?
+    </div>
+</div>
+</div>
+</div>
+</span>
+<input id="valida_ciclo" type="hidden" value="0">

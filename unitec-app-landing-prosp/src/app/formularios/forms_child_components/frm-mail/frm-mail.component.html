@@ -1,0 +1,42 @@
+<span [formGroup]="formularioPadre">
+    <div [ngClass]="{'row' : whatsbrowser == 'Chrome'}" class="row form-group" formGroupName="{{ fase }}">
+        <div [ngClass]="{'col-12' : whatsbrowser == 'Chrome'}"  class="col-12 md-form form-sm">
+        <input   
+                    type="text" 
+                    id="frm_mail" 
+                    class="form-control frm_mail_class m_autocomplete"
+                    formControlName="frm_mail" 
+                    onpaste="return false;"
+                    tabindex="4"
+                    (keypress)="reglasInputs($event)"
+                    (focusout)="focusOutFunction($event)"
+                    (focusin)="focusInFunction($event)" 
+                    [ngClass]="{
+                        mySuccess : formularioPadre.get(inputComponent).valid,
+                        myError   : !formularioPadre.get(inputComponent).valid && formularioPadre.get(inputComponent).dirty
+                    }"/>
+            <label [ngClass]="{
+                       'col-12' : whatsbrowser == 'Chrome', 
+                       mySuccess : formularioPadre.get(inputComponent).valid,
+                       myError   : formularioPadre.get(inputComponent).invalid && formularioPadre.get(inputComponent).dirty
+                   }"
+                   for="frm_mail" id="lbl-frm-email">Correo: 
+                   <span [ngClass]="{ 'color-asterisco':true, asteriskDisplay : !asterisk }" >*</span>
+</label>
+<input type="hidden" name="ok_mail" id="ok_mail"/>
+<div class="myFeedBackError" *ngIf="formularioPadre.get(inputComponent).errors  && formularioPadre.get(inputComponent).dirty">
+    <div *ngIf="formularioPadre.get(inputComponent).errors.fieldError">
+        {{formularioPadre.get(inputComponent).errors.customErrorMessage}}
+    </div>
+</div>
+</div>
+<!-- icono de busqueda por voz -->
+<!-- <div *ngIf="whatsbrowser == 'Chrome'" class=" frm_mail iconos-form">
+    <span id="micExtrangero" class=" icon-u-microfono microfono mic-form" (click)="callSpeechParentComponent(this)">
+            <span class="path1"></span><span class="path2"></span>
+    </span>
+</div> -->
+<!--termina icono de busqueda por voz -->
+</div>
+</span>
+<input type="hidden" id="EmailbyPass" value=""> 

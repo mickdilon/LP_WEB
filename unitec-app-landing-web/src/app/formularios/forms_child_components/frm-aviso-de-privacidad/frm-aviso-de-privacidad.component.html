@@ -1,0 +1,15 @@
+<span [formGroup]="formularioPadre">
+    <div class="form-group" formGroupName="{{fase}}">
+      <fieldset class="form-group" id="politicas">
+          <input type="checkbox" id="privacidad" formControlName="frm_aviso_de_privacidad" name="privacidad" value="privacidad">
+          <label for="privacidad">
+              Acepto las  <a href="{{url}}" target="_blank" >Políticas de Privacidad</a>
+          </label>
+      </fieldset>
+    </div>
+</span>
+<div class="myFeedBackError" *ngIf="formularioPadre.get(inputComponent).errors  && formularioPadre.get(inputComponent).dirty">
+    <div *ngIf="formularioPadre.get(inputComponent).errors.fieldError">
+        {{formularioPadre.get(inputComponent).errors.customErrorMessage}}
+    </div>
+</div>

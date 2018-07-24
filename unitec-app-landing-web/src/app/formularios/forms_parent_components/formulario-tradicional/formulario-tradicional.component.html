@@ -1,0 +1,70 @@
+<div class="container cont-solvis">
+    <div class="col-sm-6 col-md-12">
+        <div class="text-center">{{titulo}}</div><br>
+
+        <form id="frm_tradicional" [formGroup]="formularioTradicional" (ngSubmit)="enviar()" novalidate="novalidate">
+
+            <div id="paso1">
+                <frm-nombre (execChildInput)="vozInput($event)" [formularioPadre]="formularioTradicional" [fase]="primerPaso" [asterisk]="true"></frm-nombre>
+                <frm-apaterno (execChildInput)="vozInput($event)" [formularioPadre]="formularioTradicional" [fase]="primerPaso" [asterisk]="true"></frm-apaterno>
+                <frm-amaterno (execChildInput)="vozInput($event)" [formularioPadre]="formularioTradicional" [fase]="primerPaso" [asterisk]="true"></frm-amaterno>
+                <frm-mail (execChildInputTypeAhead)="validaEmailConAutocomplete($event)" (execChildInput)="vozInput($event)" [formularioPadre]="formularioTradicional" [fase]="primerPaso" [asterisk]="true"></frm-mail>
+                <!-- <frm-mail (execChildInputTypeAhead)="validaEmailConAutocomplete($event)" (execChildInput)="vozInput($event)" [formularioPadre]="formularioTradicional" [fase]="primerPaso"></frm-mail> -->
+                <frm-celular (execChildInput)="vozInput($event)" [formularioPadre]="formularioTradicional" [fase]="primerPaso" [asterisk]="true"></frm-celular>
+                <div id="div_revalidacion">
+                    <frm-revalidacion [formularioPadre]="formularioTradicional" [fase]="primerPaso" [asterisk]="true" id="revalidacion" class="frm-revalidacion"></frm-revalidacion>
+                </div>
+                <input type="hidden" id="CID" name="CID">
+            </div>
+            <div id="paso2" style="display : none">
+                <div class="container contenedor-app">
+                    <div class="row row-menu-app-form">
+                        <div class="col-2 app-left-arrow" (click)="rmCookie();">
+                            <i class="material-icons">arrow_back</i>
+                        </div>
+                        <div class="col-8 app-menu-title">
+                            {{ titulo_app_menu }}
+                        </div>
+                        <!--<div class="col-2 app-rigth-arrow">
+                            <i class="material-icons">arrow_forward</i>
+                        </div>-->
+                    </div>
+                    <hr id="divisor-menu-app">
+                    <!-- div mensaje de error no asignado -->
+                    <div class="row row-error-app">
+                        <div class="col-12">
+                            <div class="col-12 col-error-app">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-content-menu-app">
+                        <!-- Paso seleccion de estado -->
+                        <div class="col-estados">
+                            <frm-estado-expuesto [formularioPadre]="formularioTradicional" [fase]="segundoPaso" [asterisk]="true"></frm-estado-expuesto>
+                        </div>
+                        <!-- paso seleccion de linea de negocio -->
+                        <div class="col-lineas-negocio">
+                            <frm-lineas-negocio-app [formularioPadre]="formularioTradicional" [fase]="segundoPaso" [asterisk]="true"></frm-lineas-negocio-app>
+                        </div>
+                    </div>
+                </div>
+                <!-- termina div container -->
+            </div>
+            <!-- termina div paso 2 -->
+            <frm-politicas-condiciones></frm-politicas-condiciones>
+            <div class="form-group row fila-botones">
+                <div class="centered div-btn-continuar">
+                    <button class="btn btn-primary btn-frm" id="continuarTrd" (click)="btnToogle()">
+                        {{ btnToogleValue }}
+                    </button>
+                    <!-- <button type="submit" class="btn btn-primary btn-frm" id="enviarTrd" style="display:none">
+                        {{ btnEnviar }}
+                    </button> -->
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+<div id="formApp"></div>

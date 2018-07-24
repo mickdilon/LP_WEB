@@ -1,0 +1,44 @@
+.navbar {
+  padding: 0 !important; }
+
+.bg-faded {
+  background-color: transparent; }
+
+.navbar-superior {
+  background-color: #FFF; }
+
+.navbar-inferior {
+  background-color: rgba(0, 80, 255, 0.8) !important; }
+
+.logo {
+  padding-left: 10px; }
+
+.icon-navbar, .fa-search {
+  color: #006fba !important;
+  font-size: 28px; }
+
+.fa-search {
+  float: right;
+  padding-right: 72px;
+  padding-top: 5px; }
+
+.menu-navbar {
+  float: right !important; }
+
+.icons-contact-navbar {
+  color: #FFFFFF !important;
+  font-size: 28px;
+  padding: 10px; }
+
+.content-icons-contact-navbar {
+  width: 100%;
+  max-width: 160px;
+  float: left; }
+
+.content-icons-contact-navbar-left {
+  display: inline !important;
+  padding-left: 15px; }
+
+.content-icons-contact-navbar-right {
+  float: right;
+  padding-right: 20px; }

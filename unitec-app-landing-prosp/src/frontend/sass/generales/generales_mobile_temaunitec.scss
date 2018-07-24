@@ -1,0 +1,8 @@
+//Importamos los estilos que se ocupan en todo el sitio
+@import "../secciones/sec_mobile_header.scss";
+@import "../secciones/sec_mobile_footer.scss";
+//Estilos generales que aplican para el body por ejemplo
+$margen-header: 109px;
+body {
+    margin-top: $margen-header !important;
+}

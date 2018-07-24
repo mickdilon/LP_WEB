@@ -1,0 +1,42 @@
+<span [formGroup]="formularioPadre">
+    <div class="form-group" formGroupName="{{fase}}">
+        <div id="secLineasNegocio" class="tabs_content">
+            <div class="row">
+                <div
+                    class="col-6 col-cuadros-contenedor"
+                    *ngFor="let lineas of lineasNegocio; let i = index;"
+                    (click)="muestraProductos($event,lineas.crmit_codigounico)" 
+                >
+                        <div class="col-12 col-cuadros-lineas">
+                                <div class="imagen-lineas-cuadros {{ lineas.class }}">
+
+                                </div>
+                                <div class="titulo-lineas-cuadros" style="text-align:center;">
+                                        {{ lineas.crmit_name }}
+                                </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Div para el listado de productos (carreras) -->
+        <div id="secProductos" class="tabs_content">
+        </div>
+        <!-- div para el listado de modalidades -->
+        <div id="secModalidades" class="tabs_content">
+            <div class="row">
+            </div>
+        </div>
+        <!-- div para el listado de campus -->
+        <div id="secCampus" class="tabs_content">
+                <div class="row">
+                </div>
+        </div>
+        <!-- div para el listado de ciclos -->
+        <div id="secCiclos" class="tabs_content">
+                <div class="row">
+                </div>
+        </div>
+
+    </div>
+</span>

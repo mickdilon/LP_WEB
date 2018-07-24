@@ -1,0 +1,303 @@
+$separacion: 16px;
+$grayLight: #CCC;
+$tituloResultado: #F68B1F;
+$linkResultado: #006fba;
+$color-success : #4285f4;
+
+@keyframes rotating {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  20% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  40%{
+  	-webkit-transform: rotateX(0deg); /* Safari */
+    transform: rotateX(0deg);
+  }
+  60%{
+  	-webkit-transform: rotateX(360deg); /* Safari */
+    transform: rotateX(360deg);
+  }
+  80%{
+    -webkit-transform: rotateY(360deg); /* Safari */
+    transform: rotateY(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 5s linear infinite;
+  -moz-animation: rotating 5s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 5s linear infinite;
+  animation: rotating 5s linear infinite;
+}
+
+@mixin f-center-item( $alto ) {
+    position: relative;
+    width: 100%;
+    height: $alto;
+
+    -ms-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin lineClamp( $lineas ){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $lineas;
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+}
+@mixin scroll-style( $color ){
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px $color;
+        background-color: $color;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0px;
+        background-color: $color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color;
+    }
+}
+
+.input-group-addon{
+    background-color: transparent !important;
+}
+
+:host /deep/ span.mdlclose:before{
+    padding-right: 16px;
+    color: $tituloResultado !important;
+    font-size: 40px;
+}
+
+:host /deep/ .BuscadorGCS{
+    width: 100%;
+    min-height: 800px;
+    padding: $separacion 0;
+
+    div{
+        .logoBuscador{
+            @include f-center-item(125px);
+
+            img{
+                width: 150px;
+                height: auto;
+            }
+        }
+        .input-group.newSearch{
+            margin: 0 24px;
+            width: calc( 100vw - 50px );
+            border: 1px solid #006fba;
+
+            input[type="search"] {
+                width: calc(100vw - 100px);
+                outline: 0px;
+                border: none;
+                padding: 5px;
+                
+                //Estilos para omitir anuncios de inpur mdbootstrap
+                &:focus:not([readonly]).mySuccess{
+                    border: none;
+                    box-shadow: none;
+                }
+                &.mySuccess{
+                    border: none;
+                    box-shadow: none;
+                }
+                &:focus:not([readonly]).myError{
+                    border: none;
+                    box-shadow: none;
+                }
+                &.myError{
+                    border: none;
+                    box-shadow: none;
+                }
+                &.valid{
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+            .input-group-addon{
+                border: none;
+            }
+            .microfono{
+                font-size: 24px;
+            }
+        }
+
+        .GCSCintillo{
+            padding: 0 1rem;
+            overflow-x: auto;
+            width: 100%;
+            .GCSNav{
+                display: inline-flex;
+                span.active{
+                    border-bottom: 1px solid $linkResultado;
+                    font-weight: 500;
+                    color: #006fba;
+                }
+                span{
+                    padding: 5px 24px;
+                    border-bottom: 1px solid #757575;
+                }
+            }
+            
+            @include scroll-style( transparent )     
+        }
+
+        #GCSResultados{
+            padding: 0 $separacion 0 $separacion;
+            
+            div.msgGCS{
+                .msgResults{
+                    position: relative;
+                    padding: 16px;
+                    padding-top: 0;
+                    margin: 18px 0;
+                    border-bottom: 1px solid $grayLight;
+                }
+                b{
+                    position: relative;
+                    padding: 24px 16px;
+                    padding-bottom: 40px;
+                }
+            }
+
+            .GCSresultItem{
+                width: 100%;
+                clear: both;
+                > header, section{
+                    padding: $separacion; 
+                }
+                header{
+                    padding-bottom: 0px;
+                    .titulo{
+                        font-weight: 400;
+                        font-size: 17px;
+                        color: $tituloResultado;
+                        height: 44px !important;
+                        @include lineClamp(2);
+                    }
+                    .link{
+                        color: $linkResultado;
+                        @include lineClamp(1);
+                        font-size: .95rem !important;
+                    }
+                }
+                section{
+                    padding-top: 0px;
+                    max-height: 78px;
+                    @include lineClamp(3);
+                    border-bottom: 1px solid $grayLight;
+                }
+            }
+
+            .GCSresultItem:hover{
+                //border: 1px solid $grayLight;
+                header{
+                    padding-bottom: 0px;
+                    margin-bottom: 0px; 
+                }
+            }
+        }
+    }
+}
+
+:host /deep/ .typeahead-menu{
+    width: calc( 100% + 40px ) !important;
+    color: #757575 !important;
+    top: 100% !important;
+    padding: 0px 16px !important;
+    overflow-y: auto !important;
+    top: 101% !important;
+    left: -1px !important;
+    border: 1px solid #aba99e !important;
+}
+
+:host /deep/ .tt-suggestion.tt-selectable{
+    padding: 8px 0px;
+    border-bottom: 1px solid #aba99e !important;
+}
+
+:host /deep/ .tt-suggestion.tt-selectable:hover{
+    background: rgba( 240, 240, 240, .5) 
+}
+
+:host /deep/ .tt-dataset > .tt-suggestion.tt-selectable:last-child {
+    border-bottom: 1px solid transparent !important;
+}
+
+.speachMic{
+    display: none;
+    font-size: 24px;
+    @include f-center-item(125px);
+
+    .microfono{
+        font-size: 74px;
+    }
+}
+
+::ng-deep .frm_GCS::-webkit-input-placeholder {
+        color: $grayLight;
+        text-transform: initial !important;
+}
+::ng-deep .frm_GCS::-moz-placeholder { /* Firefox 19+ */
+    color: $grayLight;
+    text-transform: initial !important;
+}
+::ng-deep .frm_GCS::-ms-input-placeholder { /* IE 10+ */
+    color: $grayLight;
+    text-transform: initial !important;
+}
+::ng-deep .frm_GCS::-moz-placeholder { /* Firefox 18- */
+    color: $grayLight;
+    text-transform: initial !important;
+}
+
+::ng-deep .frm_GCS::placeholder { /* Firefox 18- */
+    color: $grayLight;
+    text-transform: initial !important;
+}
+
+::ng-deep ::-webkit-input-placeholder {
+    text-transform: initial;
+ }
+ 
+ ::ng-deep ::-moz-placeholder { 
+    text-transform: initial;
+ }
+ 
+ ::ng-deep ::-moz-placeholder {  
+    text-transform: initial;
+ }
+ 
+ ::ng-deep ::-ms-input-placeholder { 
+    text-transform: initial;
+ }
+
+ /*EStilos para tyeahead*/
+ /*::ng-deep .typeahead-menu {
+    position: "absolute";
+    background: "white";
+    width: "calc(100% + 40px) !important";
+    top: "101% !important";
+    left: "-1px !important";
+    padding: "0 16px";
+    z-index: "100";
+    display: "none";
+ }*/

@@ -1,0 +1,112 @@
+//Variables principales del temaunitec
+//Colores pricipales
+$unitec_principal: #006fba;
+$unitec_principal_b: #0f406b;
+$unitec_secundario: #F68B1F;
+//Titulos y texto
+$titulos_principales: #757575;
+$titulos_secundarios: #FFFFFF;
+$texto_principal: #5a5a5a;
+$texto_secundario: #FFFFFF;
+$fondo-cuerpo-form: #FFFFFF;
+//Divisores y lineas
+$divisores_de_secciones: #333333;
+//Margenes
+$margen-superior-cuerpo: 10px;
+$margen-inferior-imagen: 15px;
+//Colores Thania
+$azul_unitec: #006fba;
+$boton_naranja_unitec: #f68b1f;
+$gris_titulos: #757575;
+$gris_texto: #333333;
+$gris_minicards: #f8f8f8;
+$iconos: #757575;
+$input_verde: #00c851;
+$input_rojo: #cc0000;
+$input_azul: #0099CC;
+$check_verde: #007E33;
+.sin-estado {
+    display: block;
+}
+
+.con-estado {
+    display: none;
+}
+
+.row-content-menu-app {
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: -10px;
+}
+
+
+/*Listado de divs par los estados*/
+
+.division-div {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: $gris_texto;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.division-div.active {
+    background-color: $azul_unitec;
+    color: white;
+    padding-left: 10px;
+}
+
+.col-estados {
+    width: 100%;
+}
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 2;
+    color: $input_rojo;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+

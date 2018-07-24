@@ -1,0 +1,79 @@
+// ICON-U
+
+@font-face {
+  font-family: 'icon-u';
+  src:  url('#{$icon-u-path}icon-u.eot?vug0wk');
+  src:  url('#{$icon-u-path}icon-u.eot?vug0wk#iefix') format('embedded-opentype'),
+    url('#{$icon-u-path}icon-u.ttf?vug0wk') format('truetype'),
+    url('#{$icon-u-path}icon-u.woff?vug0wk') format('woff'),
+    url('#{$icon-u-path}icon-u/icon-u.svg?vug0wk#icon-u') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-u' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-u-unitec:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-u-licenciatura:before {
+  content: "\e90e";
+}
+.icon-u-cerrar:before {
+  content: "\e900";
+  color: #000;
+}
+.icon-u-close:before {
+  content: "\e901";
+}
+.icon-u-microfono .path1:before {
+  content: "\e902";
+  color: rgb(0, 111, 186);
+}
+.icon-u-microfono .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(246, 139, 31);
+  opacity: 0.9412;
+}
+.icon-u-admision:before {
+  content: "\e904";
+}
+.icon-u-alumnos:before {
+  content: "\e905";
+}
+.icon-u-becas:before {
+  content: "\e906";
+}
+.icon-u-bolsa:before {
+  content: "\e907";
+}
+.icon-u-conocenos:before {
+  content: "\e908";
+}
+.icon-u-egresados:before {
+  content: "\e909";
+}
+.icon-u-posgrado:before {
+  content: "\e90b";
+}
+.icon-u-preparatoria:before {
+  content: "\e90c";
+}
+.icon-u-profesores:before {
+  content: "\e90d";
+}

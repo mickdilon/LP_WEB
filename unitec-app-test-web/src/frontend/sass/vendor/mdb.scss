@@ -1,0 +1,99 @@
+/*!
+ * Material Design for Bootstrap 4
+ * Version: MDB PRO 4.3.1
+ *
+ * 
+ * Copyright: Material Design for Bootstrap
+ * http://mdbootstrap.com/
+ *
+ * Read the license: http://mdbootstrap.com/license/
+ *
+ *
+ * Documentation: http://mdbootstrap.com/
+ *
+ * Getting started: http://mdbootstrap.com/getting-started/
+ *
+ * Tutorials: http://mdbootstrap.com/bootstrap-tutorial/
+ *
+ * Templates: http://mdbootstrap.com/templates/
+ *
+ * Support: http://mdbootstrap.com/forums/forum/support/
+ *
+ * Contact: office@mdbootstrap.com 
+ *
+ * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
+ *
+ */
+ 
+@charset "UTF-8"; 
+
+// MDB Framework //
+
+// Mixins 
+@import "components/mdb/free/data/prefixer";
+@import "components/mdb/free/data/mixins";
+
+// Variables
+@import "components/mdb/free/data/colors";
+@import "components/mdb/free/data/variables-b4";
+@import "components/mdb/free/data/variables";
+
+//Global
+@import "components/mdb/free/global";
+
+// MDB Free
+@import "components/mdb/free/roboto";
+@import "components/mdb/free/icon-u";
+@import "components/mdb/free/typography";
+@import "components/mdb/free/animations";
+@import "components/mdb/free/waves";
+@import "components/mdb/free/helpers";
+@import "components/mdb/free/buttons";
+@import "components/mdb/free/forms-basic";
+@import "components/mdb/free/cards-basic";
+@import "components/mdb/free/navbars";
+@import "components/mdb/free/hover-effects";
+@import "components/mdb/free/footer";
+@import "components/mdb/free/carousels-basic";
+
+// MDB Premium
+@import "components/mdb/pro/forms-pro";
+@import "mdb/pro/tabs";
+@import "components/mdb/pro/msc";
+@import "components/mdb/pro/progress";
+@import "components/mdb/pro/accordion";
+@import "components/mdb/pro/buttons-pro";
+@import "components/mdb/pro/social-buttons";
+@import "components/mdb/pro/cards-pro";
+@import "components/mdb/pro/dropdowns-pro";
+@import "components/mdb/pro/light-box";
+@import "components/mdb/pro/side-nav";
+@import "components/mdb/pro/navbars-pro";
+@import "components/mdb/pro/carousels-pro";
+@import "components/mdb/pro/modals-pro";
+@import "components/mdb/pro/toasts";
+@import "components/mdb/pro/scrollspy";
+@import "components/mdb/pro/charts-pro";
+@import "components/mdb/pro/animations-pro";
+@import "components/mdb/pro/scrollbar";
+@import "components/mdb/pro/ecommerce";
+@import "components/mdb/pro/skins"; 
+@import "components/mdb/pro/chips";
+@import "components/mdb/pro/parallax";
+@import "components/mdb/pro/stepper";
+
+// DATE & TIME PICKERS 
+@import "components/mdb/pro/date_picker/default.scss";
+@import "components/mdb/pro/date_picker/default.date.scss";
+@import "components/mdb/pro/date_picker/default.time.scss";
+
+
+// SECTIONS
+@import "components/mdb/pro/sections/blog";
+@import "components/mdb/pro/sections/magazine";
+@import "components/mdb/pro/sections/pricing";
+@import "components/mdb/pro/sections/testimonials";
+@import "components/mdb/pro/sections/features";
+@import "components/mdb/pro/sections/team";
+@import "components/mdb/pro/sections/templates";
+@import "components/mdb/pro/sections/social";

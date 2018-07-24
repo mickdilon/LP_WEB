@@ -1,0 +1,50 @@
+<span [formGroup]="formularioPadre">
+    <div class="form-inline" formGroupName="{{fase}}">
+        <fieldset class="form-group btn-sm btn-outline-primary m-auto p-2 radio-input icon-alumno">
+            <div class="row m-auto p-1">
+                <!-- <div class="icon-alumno ml-3 icono"></div> -->
+                <div class="m-auto">
+                    <input class="p-0 radio-form" formControlName="frm_radio_perfil_AlumnoMaestro" name="frm_radio_perfil_AlumnoMaestro" type="radio" id="alumno" value="alumno" checked="checked">
+                    <i class="icon-u icon-u-alumnos mr-1 icon-alumno icono"></i>
+                    <label for="alumno" class="icon-alumno">Soy Alumno</label>
+                </div>
+            </div>                      
+        </fieldset>
+
+        <fieldset class="form-group btn-sm btn-outline-primary m-auto p-2 radio-input icon-profesor">
+            <div class="row m-auto p-1">
+                <!-- <div class="icon-profesor ml-3 icono"></div> -->
+                <div class="m-auto">
+                    <input class="p-0 radio-form" formControlName="frm_radio_perfil_AlumnoMaestro" name="frm_radio_perfil_AlumnoMaestro" type="radio" id="profesor" value="profesor">
+                    <i class="icon-u icon-u-profesores mr-1 icon-profesor icono"></i>
+                    <label for="profesor" class="icon-profesor">Soy Profesor</label>
+                </div>
+            </div>       
+        </fieldset>
+    </div>
+
+</span>
+<div class="myFeedBackError row" *ngIf="formularioPadre.get(inputComponent).errors  && formularioPadre.get(inputComponent).dirty">
+    <div class="fix-error" *ngIf="formularioPadre.get(inputComponent).errors.fieldError">
+        {{formularioPadre.get(inputComponent).errors.customErrorMessage}}
+    </div>
+</div>
+
+<!-- <span [formGroup]="formularioPadre">
+    <div class="btn-group" data-toggle="buttons" formGroupName="{{fase}}">
+        <label class="btn btn-primary col">
+            <input formControlName="frm_radio_perfil_AlumnoMaestro" name="frm_radio_perfil_AlumnoMaestro" type="radio" value="alumno" id="alumno"> Soy Alumno
+        </label>
+
+        <label class="btn btn-primary col">
+            <input formControlName="frm_radio_perfil_AlumnoMaestro" name="frm_radio_perfil_AlumnoMaestro" type="radio" value="profesor" id="profesor"> Soy Profesor
+        </label>
+    </div>
+</span>
+
+<div class="myFeedBackError row" *ngIf="formularioPadre.get(inputComponent).errors  && formularioPadre.get(inputComponent).dirty">
+    <div *ngIf="formularioPadre.get(inputComponent).errors.fieldError">
+        {{formularioPadre.get(inputComponent).errors.customErrorMessage}}
+    </div>
+</div> -->
+

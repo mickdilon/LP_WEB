@@ -1,0 +1,26 @@
+<main class="col-12"><!-- /.Main <layout-->
+        <section id="elegant-card"><!-- SECTION-->
+            <div class="row"><!-- Live preview-->
+                <div class="col-md-12"><!-- col-md-12 -->                   
+                    <!-- Card -->
+                    <div class="card">
+                        <!-- Title -->
+                        <h4 class="card-title">{{titulo_buscador}}</h4>
+                        <!-- Aqui van los componentes list_icon, list, texto, cascade, footer, image, collapse -->
+                        <div class="card-block pb16">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 class="card-content-title">                                        
+                                    </h4>
+                                    <p class="card-text">{{contenido_buscador}}</p>
+                                    <input type="search" id="input-busqueda-integrada" placeholder="  Buscar ..." class="busqueda-integrada" autocomplete="off" (keydown.enter)="busqueda_integrada($event)">
+                                    <span class="icon-u-microfono microfono"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.Card -->
+                </div><!-- col-md-12 -->
+            </div><!-- /.Live preview-->
+        </section><!-- SECTION-->
+    </main><!-- /.Main <layout-->

@@ -1,0 +1,13 @@
+$input_azul_unitec : #006fba;
+$bold_title: 500;
+
+.frm-problemas-cuenta {
+    label {
+        font-size: .7rem;
+        float: right;
+        a{
+            color: $input_azul_unitec;
+            font-weight: $bold_title;
+        }
+    }
+}

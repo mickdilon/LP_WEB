@@ -1,0 +1,40 @@
+<span [formGroup]="formularioPadre">
+    <div [ngClass]="{'row' : whatsbrowser == 'Chrome'}" class="row form-group" formGroupName="{{fase}}">
+        <div [ngClass]="{'col-12' : whatsbrowser == 'Chrome'}" class="col-12 md-form form-sm">
+            <input type="text" id="frm_apaterno" class="form-control"
+                   formControlName="frm_apaterno" autocomplete="off"
+                   onpaste="return false;"
+                   tabindex="2"
+                    #frm_apaterno
+                   (keypress)="reglasInputs(frm_apaterno, $event.keyCode, $event.key)"
+                   [ngClass]="{ 
+                       mySuccess : formularioPadre.get(inputComponent).valid,
+                       myError   : !formularioPadre.get(inputComponent).valid && formularioPadre.get(inputComponent).dirty
+                   }">
+                   <label [ngClass]="{ 
+                      'col-12' : whatsbrowser == 'Chrome', 
+                       mySuccess : formularioPadre.get(inputComponent).valid,
+                       myError   : formularioPadre.get(inputComponent).invalid && formularioPadre.get(inputComponent).dirty
+                   }"
+                   for="frm_apaterno">Apellido paterno: 
+                   <span [ngClass]="{ 'color-asterisco':true, asteriskDisplay : !asterisk }">*</span>
+</label>
+<div class="myFeedBackError" *ngIf="formularioPadre.get(inputComponent).errors  && formularioPadre.get(inputComponent).dirty">
+    <div *ngIf="formularioPadre.get(inputComponent).errors.fieldError">
+        {{formularioPadre.get(inputComponent).errors.customErrorMessage}}
+    </div>
+</div>
+</div>
+
+
+<!-- icono de busqueda por voz -->
+<!-- <div *ngIf="whatsbrowser == 'Chrome'" class="frm_apaterno iconos-form">
+    <span id="micExtrangero" class=" icon-u-microfono microfono mic-form" (click)="callSpeechParentComponent(this)">
+                        <span class="path1"></span><span class="path2"></span>
+    </span>
+</div> -->
+<!--termina icono de busqueda por voz -->
+
+
+</div>
+<span>

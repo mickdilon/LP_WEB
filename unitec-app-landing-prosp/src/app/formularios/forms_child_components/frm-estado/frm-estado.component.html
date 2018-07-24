@@ -1,0 +1,61 @@
+<span [formGroup]="formularioPadre">
+<div class="form-group" formGroupName="{{fase}}">
+
+        <div class="md-form form-sm">
+        <select class="mdb-select frm-estado-ciclo" 
+                id="frm_estado" 
+                formControlName="frm_estado" 
+                [ngClass]="{ 
+                    mySuccess : formularioPadre.get(inputComponent).valid,
+                    myError   : !formularioPadre.get(inputComponent).valid && formularioPadre.get(inputComponent).dirty
+        }">
+                        <option value="" selected>Selecciona un Estado:</option>
+                        <option value="AGUASCALIENTES">Aguascalientes</option>
+                        <option value="BAJA CALIFORNIA NOR">Baja California Norte</option>
+                        <option value="BAJA CALIFORNIA SUR">Baja California Sur</option>
+                        <option value="CAMPECHE">Campeche</option>
+                        <option value="COAHUILA">Coahuila</option>
+                        <option value="COLIMA">Colima</option>
+                        <option value="CHIAPAS">Chiapas</option>
+                        <option value="CHIHUAHUA">Chihuauha</option> 
+                        <option value="CIUDAD DE MEXICO">Ciudad de México</option>
+                        <option value="DURANGO">Durango</option>
+                        <option value="ESTADO DE MEXICO">Estado de México</option>
+                        <option value="GUANAJUATO">Guanajuato</option>
+                        <option value="GUERRERO">Guerrero</option>
+                        <option value="HIDALGO">Hidalgo</option>
+                        <option value="JALISCO">Jalisco</option>
+                        <option value="MICHOACAN">Michoacan</option>
+                        <option value="MORELOS">Morelos</option>
+                        <option value="NAYARIT">Nayarit</option>
+                        <option value="NUEVO LEON">Nuevo León</option>
+                        <option value="OAXACA">Oaxaca</option>
+                        <option value="PUEBLA">Pueba</option>
+                        <option value="QUERETARO">Querétar</option>
+                        <option value="QUINTANA ROO">Quintana Roo</option>
+                        <option value="SAN LUIS POTOSI">San Luis Potosi</option>
+                        <option value="SINALOA">Sinaloa</option>
+                        <option value="SONORA">Sonora</option>
+                        <option value="TABASCO">Tabasco</option>
+                        <option value="TAMAULIPAS">Tamaulipas</option>
+                        <option value="TLAXCALA">Tlaxcala</option>
+                        <option value="VERACRUZ">Veracruz</option>
+                        <option value="YUCATAN">Yucatán</option>
+                        <option value="ZACATECAS">Zacatecas</option>
+        </select>
+            <label [ngClass]="{ 
+                       mySuccess : formularioPadre.get(inputComponent).valid,
+                       myError   : formularioPadre.get(inputComponent).invalid && formularioPadre.get(inputComponent).dirty
+                   }"
+                   for="form_nombre">Estado: 
+                   <span [ngClass]="{ 'color-asterisco':true, asteriskDisplay : !asterisk }">*</span>
+</label>
+<div class="frm-estado myFeedBackError con-estado">
+    <div>
+        Seleccione un estado
+    </div>
+</div>
+</div>
+</div>
+</span>
+<input id="valida_estado" type="hidden" value="0">

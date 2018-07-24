@@ -1,0 +1,108 @@
+<!-- Modal -->
+<div class="modal fade" id="modal_frm_biblioteca" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Cintillo para cerrar el formulario -->
+    <!-- <div id="head_close_modal">
+        <i id="icon-exit-form" class="material-icons">keyboard_arrow_left</i>
+    </div> -->
+    
+    <div class="modal-dialog modal-fluid contenido-modal" role="document">
+        <!--Content-->
+        <div class="modal-content modal-header">
+
+            <div class="row content-close">
+                <i class="icon-u  icon-u-cerrar btn-close" id="btn-close"></i>                   
+                <!-- <button type="button" class="close btn-close" data-dismiss="modal">&times;</button> -->
+            </div>
+            
+            <div class="row">
+                <div class="img-formulario">
+                    <img id="img-form-biblioteca" src="" alt="img-form" class="img-header">
+                </div>
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            </div>
+            
+            <!--Header-->            
+            <!-- div para el icono y el titulo -->
+            <div class="row content-logo p-3">
+                <div class="col-2 logo-formulario-biblioteca">
+                    <i class="icon-u icon-u-biblioteca icono-biblioteca"></i>
+                </div>
+                
+                <div class="col-10">
+                    <h2 class="titulo-modal">{{ titulo }}</h2>
+                </div>                
+            </div>            
+            
+            <!--Body formulario-->            
+            <div class="modal-body modal-body-login col-12">
+                <!-- <span [formGroup]="formularioLogin"> -->
+                    <div id="faseUno">
+                        <div class="form-group">
+                            <frm-radio-perfil-alumno-maestro [formularioPadre] = "formularioLogin" [fase]="primerPaso"></frm-radio-perfil-alumno-maestro>
+                        </div>
+
+                        <div class="form-group row pl-3 mt-2">
+                            <div class="col">
+                                <frm-mail-login [formularioPadre] = "formularioLogin" [fase]="primerPaso"></frm-mail-login>
+                            </div>
+                            <div class="col dominio">{{ dominio_Correo}}</div>                            
+                        </div>
+
+                        <div class="form-group col-12 cuenta">
+                            <frm-ncuenta [formularioPadre] = "formularioLogin" [fase]="primerPaso" [asterisk]="false"></frm-ncuenta>
+                        </div>
+
+                        <div class="form-group col-12 aviso-privacidad">
+                            <app-frm-aviso-de-privacidad [formularioPadre] = "formularioLogin" [fase]="primerPaso"></app-frm-aviso-de-privacidad>
+                        </div>                            
+                    </div>
+
+                    <div id="preload-library" class="text-center"></div>    
+                <!-- </span> -->
+            </div>            
+            <!-- Body formulario-->
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <div class="form-group div-btn-ingresar">                                
+                    <button  type="submit" (click)="enviar()" id="{{btn_ingresar}}" class="btn btn_ingresar">
+                        Ingresar.
+                    </button>                   
+                </div>                            
+            </div>
+            <!-- Modal Footer -->
+            <div class="form-group col-md-4 col-sm-6 col-xs-12 problema-cuenta">                    
+                <frm-problemas-cuenta></frm-problemas-cuenta>                   
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- Modal -->
+
+<main class="col-12 mt-1 mb-1"><!-- /.Main <layout-->
+    <section id="elegant-card"><!-- SECTION-->
+        <div class="row"><!-- Live preview-->
+            <div class="col-md-12"><!-- col-md-12 -->
+                <!-- Trigger the modal with a button -->
+
+                <!-- <button type="button" id="{{btn_login}}" class="btn_ingresar m-auto btn btn-primary d-none" data-toggle="modal" data-target="#modal_frm_biblioteca">
+                    Biblioteca Virtual
+                </button> -->
+    
+                <div class="row content-busqueda-integrada mt-1 d-none">
+                    <frm-busqueda-integrada></frm-busqueda-integrada>
+                </div>
+
+                <!-- <button type="button" (click)="cerrarSession()" id="{{btn_cerrar}}" class="mt-2 mb-2 m-auto cerrar-sesion btn btn-danger d-none">
+                    Cerrar Session.
+                </button> -->
+
+                <!-- <button type="button" (click)="enviarImpulsa()" id="btn-impulsa" class="btn_ingresar m-auto btn btn-primary">
+                    Impulsa
+                </button> -->
+
+            </div><!-- col-md-12 -->
+        </div><!-- /.Live preview-->
+    </section><!-- SECTION-->
+</main><!-- /.Main <layout-->

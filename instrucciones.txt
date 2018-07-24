@@ -1,0 +1,11 @@
+Instrucciones:
+
+1.- Instalar los node_modules en cada proyecto
+2.- Compilar en modo produccion, esto generará la carpeta con los archivos que se tienen que subir
+3.- De la carpeta generada se tienen que subir unicamente los siguientes archivos:
+	-inline.bundle.js
+	-main.bundle.js
+	-polyfills.bundle.js
+4.- No hay que subir el index generado, utilizar los que ya están en el servidor 
+
+	

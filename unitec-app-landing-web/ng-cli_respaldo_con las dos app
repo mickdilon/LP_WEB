@@ -1,0 +1,85 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "project": {
+        "name": "unitec"
+    },
+    "apps": [
+        {
+        "name": "unitec-app", 
+        "root": "src",
+        "outDir": "../../themes/temaunitec/assets/frontend/js/angularapp/",
+        "assets": [
+            "assets",
+            "favicon.ico"
+        ],
+        "index": "index.html",
+        "main": "main.ts",
+        "polyfills": "polyfills.ts",
+        "test": "test.ts",
+        "tsconfig": "tsconfig.app.json",
+        "testTsconfig": "tsconfig.spec.json",
+        "prefix": "app",
+
+        "environmentSource": "environments/environment.ts",
+        "environments": {
+            "dev": "environments/environment.ts",
+            "prod": "environments/environment.prod.ts"
+        }
+    },
+        {
+            "name": "calculadora-app",  
+            "root": "src",
+            "outDir": "../../themes/temaunitec/assets/frontend/js/angularcalcu/",
+            "assets": [
+                "assets",
+                "favicon.ico"
+            ],
+            "styles": [
+                "../node_modules/nouislider/distribute/nouislider.min.css",
+                "frontend/css/vendor/min/bootstrap-reboot.min.css",
+                "frontend/css/vendor/min/bootstrap.min.css",
+                "frontend/css/vendor/min/mdb.min.css"
+            ],
+            "scripts": [
+            
+                "frontend/js/vendor/typeahead.js"
+            ],
+            "index": "index.html",
+            "main": "main-calculadora.ts",
+            "polyfills": "polyfills.ts",
+            "test": "test.ts",
+            "tsconfig": "tsconfig.app.calcu.json",
+            "testTsconfig": "tsconfig.spec.json",
+            "prefix": "app",
+            "environmentSource": "environments/environment.ts",
+            "environments": {
+                "dev": "environments/environment.ts",
+                "prod": "environments/environment.prod.ts"
+            }
+        }
+],
+    "e2e": {
+        "protractor": {
+            "config": "./protractor.conf.js"
+        }
+    },
+    "lint": [{
+            "project": "src/tsconfig.app.json"
+        },
+        {
+            "project": "src/tsconfig.spec.json"
+        },
+        {
+            "project": "e2e/tsconfig.e2e.json"
+        }
+    ],
+    "test": {
+        "karma": {
+            "config": "./karma.conf.js"
+        }
+    },
+    "defaults": {
+        "styleExt": "scss",
+        "component": {}
+    }
+}

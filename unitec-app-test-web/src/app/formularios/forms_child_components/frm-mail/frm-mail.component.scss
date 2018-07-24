@@ -1,0 +1,25 @@
+/*Estilos del autocomplete*/
+/*ng2-auto-complete, input {
+      display: block; border: 1px solid #ccc; width: 300px;
+
+}*/
+:host /deep/ .scrollable-menu {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+        li{
+            cursor: pointer;
+            font-size: 22px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        li.active {
+            background: whitesmoke;
+        }
+}
+
+:host /deep/ mention-list {
+    position: absolute !important;
+    left: 0px !important;
+    top: 50px !important;
+    width: 100%  !important;
+}
