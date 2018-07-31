@@ -1,0 +1,56 @@
+[{
+        "crmit_tb_campusid": "2f3bdab0-5c72-e211-a4c9-6cae8b2a0430",
+        "crmit_codigounico": "3",
+        "crmi_name": "CUITLAHUAC"
+    },
+    {
+        "crmit_tb_campusid": "2fbf20fa-e98b-e611-ae4c-005056be4250",
+        "crmit_codigounico": "20",
+        "crmi_name": "QUERETARO"
+    },
+    {
+        "crmit_tb_campusid": "313bdab0-5c72-e211-a4c9-6cae8b2a0430",
+        "crmit_codigounico": "6",
+        "crmi_name": "ECATEPEC"
+    },
+    {
+        "crmit_tb_campusid": "333bdab0-5c72-e211-a4c9-6cae8b2a0430",
+        "crmit_codigounico": "1",
+        "crmi_name": "MARINA"
+    },
+    {
+        "crmit_tb_campusid": "353bdab0-5c72-e211-a4c9-6cae8b2a0430",
+        "crmit_codigounico": "16",
+        "crmi_name": "LEON"
+    },
+    {
+        "crmit_tb_campusid": "3b3bdab0-5c72-e211-a4c9-6cae8b2a0430",
+        "crmit_codigounico": "4",
+        "crmi_name": "SUR"
+    },
+    {
+        "crmit_tb_campusid": "3d3bdab0-5c72-e211-a4c9-6cae8b2a0430",
+        "crmit_codigounico": "15",
+        "crmi_name": "TOLUCA"
+    },
+    {
+        "crmit_tb_campusid": "61ba8610-9989-e511-957f-005056be4250",
+        "crmit_codigounico": "14",
+        "crmi_name": "EN LINEA"
+    },
+    {
+        "crmit_tb_campusid": "7cb19809-60d5-e711-9bdd-005056be6e15",
+        "crmit_codigounico": "21",
+        "crmi_name": "LOS REYES"
+    },
+    {
+        "crmit_tb_campusid": "84046544-ed87-e511-957f-005056be4250",
+        "crmit_codigounico": "19",
+        "crmi_name": "GUADALAJARA"
+    },
+    {
+        "crmit_tb_campusid": "8dbf8d98-314e-e811-8113-3863bb3c4538",
+        "crmit_codigounico": "12",
+        "crmi_name": "AGUASCALIENTES"
+    }
+]

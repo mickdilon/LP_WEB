@@ -1,0 +1,33 @@
+[{
+        "crmit_codigounico": "d9c57f89-2eba-e511-bea5-005056be4250",
+        "crmit_name": "HIBRIDA"
+    },
+    {
+        "crmit_codigounico": "b0cc1d4c-6080-e211-bfd1-3440b5bef8e4",
+        "crmit_name": "EJECUTIVA"
+    },
+    {
+        "crmit_codigounico": "54462c75-6a72-e211-a7b5-3440b5bef8e4",
+        "crmit_name": "EN LINEA"
+    },
+    {
+        "crmit_codigounico": "52462c75-6a72-e211-a7b5-3440b5bef8e4",
+        "crmit_name": "PRESENCIAL"
+    },
+    {
+        "crmit_codigounico": "4c462c75-6a72-e211-a7b5-3440b5bef8e4",
+        "crmit_name": "PRESENCIAL"
+    },
+    {
+        "crmit_codigounico": "4a462c75-6a72-e211-a7b5-3440b5bef8e4",
+        "crmit_name": "EN LINEA"
+    },
+    {
+        "crmit_codigounico": "48462c75-6a72-e211-a7b5-3440b5bef8e4",
+        "crmit_name": "PRESENCIAL"
+    },
+    {
+        "crmit_codigounico": "fab85638-b444-e811-8111-3863bb3c31e0",
+        "crmit_name": "MODALIDAD PRUEBA"
+    }
+]

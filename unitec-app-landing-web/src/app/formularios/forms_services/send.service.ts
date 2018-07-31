@@ -14,6 +14,7 @@ export class sendService {
   ciclo_default = "";
   urlreferrer: any = window.location;
   private url_ajax_php = "/lp_web/sendScribe.php";
+  private url_ajax_php2 = "/lp_web/sendScribe2.php";
   private url_ajax_micro_php = "/lp_web/sendMicroScribe.php";
   //private url_ajax_php = "/wp-content/phpServeApp/backend1.php";
   constructor(private formCookieService: formCookiesService, private readJsonService: readJson, private getJsonService:getJson) {}
@@ -45,8 +46,8 @@ export class sendService {
       data: dataForm,
       // dataType: "JSON",
       success: function(res) {
-        console.log("Micro registro enviado");   
-        console.log(res);       
+        console.log("Micro registro enviado");
+        console.log(res);
       },
       error: function(xhr, textStatus, error){
           console.log("Error");
@@ -132,7 +133,7 @@ if (isMobile) {
         "codigounico",
         id_carrera_solvis,
         JSON.parse(localStorage.getItem("jsonDetalleProductosCRM"))
-      );      
+      );
       console.log("ANTES DE PONER EL TEXTO DE LA CARRERA SOLVIS:");
       console.log(nodo_encontrado[0].name);
       jQuery(".tercer-texto-thankyou").html(nodo_encontrado[0].name);
@@ -168,7 +169,7 @@ if (isMobile) {
         "carrera_codigounico",
         id_carrera_solvis,
         JSON.parse(localStorage.getItem("jsonProductosCRM"))
-      );      
+      );
       console.log("ANTES DE OBTENER LOS ID DE NIVEL Y MODALIDAD:");
       var id_modalidad_solvis = nodo_encontrado_nivel_modalidad[0].modalidad_crmit_codigounico;
       var id_nivel_solvis = nodo_encontrado_nivel_modalidad[0].nivelestudios_crmit_codigounico;
@@ -181,14 +182,14 @@ if (isMobile) {
         "crmit_codigounico",
         id_nivel_solvis,
         JSON.parse(localStorage.getItem("jsonCarrerasCRM"))
-      );  
-      jQuery("#formApp").data("nivel",nivel_nodo_encontrado[0].crmit_name);  
+      );
+      jQuery("#formApp").data("nivel",nivel_nodo_encontrado[0].crmit_name);
       //MODALIDAD
       var modalidad_nodo_encontrado = this.readJsonService.buscar(
         "crmit_codigounico",
         id_modalidad_solvis,
         JSON.parse(localStorage.getItem("jsonModalidadCRM"))
-      );  
+      );
       jQuery("#formApp").data("modalidad",modalidad_nodo_encontrado[0].crmit_name);
       //Obtener los valores de prioridad attemp, equipo
       console.log("ANTES DE OBTENER PRIORIDAD Y ATTEMPT SOLVIS:");
@@ -204,15 +205,15 @@ if (isMobile) {
         "Campus",
         campus_prior_att,
         JSON.parse(localStorage.getItem("jsonPrioridadCRM"))
-      ); 
-      
+      );
+
       console.log("PRIORIDAD POR CAMPUS:");
       console.log(prioridad_nodo_por_campus);
       var prioridad_nodo_por_nivel = this.readJsonService.buscar(
         "BL",
         bl_prior_att,
         prioridad_nodo_por_campus
-      ); 
+      );
       console.log("PRIORIDAD POR NIVEL:");
       console.log(prioridad_nodo_por_nivel[0]);
 
@@ -221,7 +222,7 @@ if (isMobile) {
         "crmit_name",
         jQuery("#formApp").data("ciclo"),
         JSON.parse(localStorage.getItem("jsonCiclosSolvis"))
-      ); 
+      );
 
       console.log("CICLO SOLVISSS");
       console.log(id_ciclo_por_ciclo[0].crmit_codigounico);
@@ -230,7 +231,7 @@ if (isMobile) {
         "Ciclo",
         id_ciclo_por_ciclo[0].nombreventas,
         prioridad_nodo_por_nivel
-      ); 
+      );
 
       jQuery('#formApp').data("attemp",prioridad_nodo_por_ciclos[0].Attemp);
       jQuery('#formApp').data("prioridad",prioridad_nodo_por_ciclos[0].Prioridad);
@@ -240,16 +241,40 @@ if (isMobile) {
       //Asignacion de telefonos predictivos
       var predCel = jQuery("#formApp").data("celular").substring(0,2);
       var TelefonoCelularPredictivo = '9045' + jQuery("#formApp").data("celular");
+
+
       if(predCel == 55){
         TelefonoCelularPredictivo = '9044'+jQuery("#formApp").data("celular");
-      }
+      }else{
       var TelefonoPredictivo = '901'+jQuery("#formApp").data("celular").substring(2,jQuery("#formApp").data("celular").length);
-      if(predCel == 55){
-        TelefonoPredictivo = '9'+jQuery("#formApp").data("celular").substring(2,jQuery("#formApp").data("celular").length);
+      var TelefonoPredictivo2 = '901'+jQuery("#formApp").data("celular").substring(4,jQuery("#formApp").data("celular").length);
       }
 
+
+      if(predCel == 55){
+        TelefonoPredictivo = '9'+jQuery("#formApp").data("celular");
+      }else{
+        TelefonoPredictivo = '901'+jQuery("#formApp").data("celular");
+      }
+
+
+        var tel_pred = TelefonoPredictivo.substring(0,1);
+        var predCel2 =  jQuery("#formApp").data("celular").substring(0,2);
+
+      if(predCel2 == '55' || predCel2 == "55"){
+
+       var TelefonoPredictivo_22 = '9'+ jQuery("#formApp").data("celular");
+      
+      }else{
+      
+        TelefonoPredictivo_22 = '901'+ jQuery("#formApp").data("celular");
+      
+      }
+
+
+
       jQuery('#formApp').data("telefonopredictivo",TelefonoCelularPredictivo);
-      jQuery('#formApp').data("telefonopredictivo2",TelefonoPredictivo);
+      jQuery('#formApp').data("telefonopredictivo2",TelefonoPredictivo_22);
       jQuery("#formApp").data("nivelInteres",nivel_nodo_encontrado[0].crmit_codigounico);
       /* Nuevos de alfonso */
       jQuery("#formApp").data("GUIDNivelInteres",id_nivel_solvis);
@@ -272,14 +297,31 @@ if (isMobile) {
       let dataForm = JSON.parse( JSON.stringify( jQuery("#formApp").data() ) );
       jQuery(".div-btn-continuar").css("z-index","9999");
       jQuery
-      .ajax({
+      .ajax({ //Envio de sendScribe 1
         type: "POST",
         url: this.url_ajax_php,
         data: dataForm,
         // dataType: "JSON",
         success: function(res) {
-          console.log("Datos Enviados");      
-          console.log(res);    
+          console.log("Datos Enviados");
+          console.log(res);
+        },
+        error: function(xhr, textStatus, error){
+            console.log(xhr.statusText);
+            console.log(textStatus);
+            console.log(error);
+        }
+      });
+
+      jQuery
+      .ajax({ //Envio de sendScribe 2
+        type: "POST",
+        url: this.url_ajax_php2,
+        data: dataForm,
+        // dataType: "JSON",
+        success: function(res) {
+          console.log("Datos Enviados");
+          console.log(res);
         },
         error: function(xhr, textStatus, error){
             console.log(xhr.statusText);
@@ -381,6 +423,66 @@ if (isMobile) {
       .ajax({
         type: "POST",
         url: "//" + document.domain + this.url_ajax_php,
+        data: { theData: this.formCookieService.getCookieValues("c_form_data") },
+        dataType: "JSON",
+        success: function(res) {
+          // Proceso tag manager
+          if (typeof dataLayer != 'undefined') {dataLayer.push({'event': 'PASO2_COMPLETADO'});}
+
+          if(res.tipo == 'dupli'){
+              if (typeof dataLayer != 'undefined') {dataLayer.push({'event': 'FORMULARIO_DUPLICADO'});}
+              dataLayer.push({
+                  'url_value': 'formularioInformacion/frmDuplicado', // dato dinámico
+                  'event': 'StepForm'// dato estático
+              });
+          }
+
+          if(res.tipo == 'nuevo'){
+
+              let clientId="";
+
+               if (typeof dataLayer != 'undefined') {
+                  dataLayer.push({'event': dataForm.banner});
+                  ga(function(tracker) { clientId = tracker.get('clientId');});
+
+                  dataLayer.push({
+                  'leadId': clientId, // dato dinámico
+                  'CDClientID':clientId,
+                  'origenLead': 'frmTradicional', // dato dinámico
+                  'isAlumn': dataForm.esAlumno, // dato dinámico
+                  'ingress': dataForm.tipoRegistro, // dato dinámico
+                  'state': dataForm.estado, // dato dinámico
+                  'levelStudies': dataForm.nivelInteres, // dato dinámico
+                  'Period': dataForm.ciclo, // dato dinámico
+                  'carrera': dataForm.idCarrera, // dato dinámico
+                  'campus': dataForm.campus, // dato dinámico
+                  'date': new Date(), // dato dinámico
+                  'event': 'leadGeneration'// dato estático
+                  });
+
+              }
+              if (typeof dataLayer != 'undefined') {
+                  dataLayer.push({'event': 'FORMULARIO_REGISTRO'});
+              }
+          }
+          // End Proceso tag manager
+
+          // Se redirige al PDF de Vacantes
+          setTimeout(function(){ window.open("http://www.unitec.mx/folleto/impulsa.pdf"); }, 3000);
+          // setTimeout(function(){ window.location.href = "http://www.unitec.mx/folleto/impulsa.pdf"; }, 3000);
+          // End Se redirige al PDF de Vacantes
+        },
+        error: function(xhr, textStatus, error){
+            console.log(xhr.statusText);
+            console.log(textStatus);
+            console.log(error);
+        }
+      });
+
+      jQuery
+      .ajax({
+        type: "POST",
+        url: "//" + document.domain + this.url_ajax_php2,
         data: { theData: this.formCookieService.getCookieValues("c_form_data") },
         dataType: "JSON",
         success: function(res) {
@@ -627,6 +729,65 @@ if (isMobile) {
 
     })
 
+
+ jQuery.ajax({
+        type: "POST",
+        url: "//" + document.domain + this.url_ajax_php2,
+        data: { theData: this.formCookieService.getCookieValues("c_form_data") },
+        dataType: "JSON",
+        success: function(res) {
+            // Proceso tag manager
+          if (typeof dataLayer != 'undefined') {dataLayer.push({'event': 'PASO2_COMPLETADO'});}
+
+          if(res.tipo == 'dupli'){
+              if (typeof dataLayer != 'undefined') {dataLayer.push({'event': 'FORMULARIO_DUPLICADO'});}
+              dataLayer.push({
+                  'url_value': 'formularioInformacion/frmDuplicado', // dato dinámico
+                  'event': 'StepForm'// dato estático
+              });
+          }
+
+          if(res.tipo == 'nuevo'){
+
+              let clientId="";
+
+               if (typeof dataLayer != 'undefined') {
+                  dataLayer.push({'event': dataForm.banner});
+                  ga(function(tracker) { clientId = tracker.get('clientId');});
+
+                  dataLayer.push({
+                  'leadId': clientId, // dato dinámico
+                  'CDClientID':clientId,
+                  'origenLead': 'frmTradicional', // dato dinámico
+                  'isAlumn': dataForm.esAlumno, // dato dinámico
+                  'ingress': dataForm.tipoRegistro, // dato dinámico
+                  'state': dataForm.estado, // dato dinámico
+                  'levelStudies': dataForm.nivelInteres, // dato dinámico
+                  'Period': dataForm.ciclo, // dato dinámico
+                  'carrera': dataForm.idCarrera, // dato dinámico
+                  'campus': dataForm.campus, // dato dinámico
+                  'date': new Date(), // dato dinámico
+                  'event': 'leadGeneration'// dato estático
+                  });
+
+              }
+              if (typeof dataLayer != 'undefined') {
+                  dataLayer.push({'event': 'FORMULARIO_REGISTRO'});
+              }
+          }
+          // End Proceso tag manager
+
+          // Se redirige al proceso de Orientación pprofesional
+          setTimeout(function() { window.location.href = window.location.href= res.urlcc; }, 3000);
+          // End Se redirige al proceso de Orientación pprofesional
+        },
+        error: function(xhr, textStatus, error) {
+            console.log(xhr.statusText);
+            console.log(textStatus);
+            console.log(error);
+        }
+
+    })
       /*End Implementacion enviar datos BY SRP 17-01-2018*/
 
     } // Fin del else para la validacion del ciclo

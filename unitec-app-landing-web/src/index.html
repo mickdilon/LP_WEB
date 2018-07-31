@@ -1,51 +1,114 @@
 <!doctype html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>FormsApp</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta charset="UTF-8">
+<!-- TODO add manifest here -->
+<!-- <link rel="manifest" href="//www.calidadacademica.mx/wp-content/themes/temaunitec/manifest.json"> -->
+
+<!-- Ícono de mosaico para Windows -->
+<meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+<meta name="msapplication-TileColor" content="#2F3BA2">
+<!-- Add to home screen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Weather PWA">
+<link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+<meta name="google-site-verification" content="eX5Oh5kHT3WqJ4L8Y2xN__4V80op-sUyWQ3wiyri1lU" />
+<meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="profile" href="//gmpg.org/xfn/11">
+<link rel="pingback" href="//www.calidadacademica.mx/xmlrpc.php">
+<title>Universidad UNITEC | Preparatoria, Licenciaturas y Posgrados</title>
+<!-- This site is optimized with the Yoast SEO plugin v6.1.1 - https://yoa.st/1yg?utm_content=6.1.1 -->
+<meta name="description" content="UNITEC Universidad Tecnológica de México, una de las universidades con la mejor oferta educativa de México, tenemos 9 Campus con instalaciones de vanguardia además apoyamos el desempeño escolar con becas académicas de primer ingreso y financiamientos escolares."/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="//www.calidadacademica.mx/" />
+<meta property="og:locale" content="es_MX" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Home | UNITEC Universidad Tecnológica de México" />
+<meta property="og:description" content="Home de UNITEC Universidad de México, una de las universidades con la mejor oferta formativa de México, con Campus totalmente preparados para el estudio" />
+<meta property="og:url" content="//www.calidadacademica.mx/" />
+<meta property="og:site_name" content="UnitecMx" />
+<meta property="og:image" content="//calidadacademica.mx/wp-content/uploads/2017/08/admision-unitec-principal-h.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Home de UNITEC Universidad de México, una de las universidades con la mejor oferta formativa de México, con Campus totalmente preparados para el estudio" />
+<meta name="twitter:title" content="Home | UNITEC Universidad Tecnológica de México" />
+<meta name="twitter:image" content="//calidadacademica.mx/wp-content/uploads/2017/08/admision-unitec-principal-h.jpg" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/www.calidadacademica.mx\/","name":"UnitecMx","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.calidadacademica.mx\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="UnitecMx &raquo; Feed" href="//www.calidadacademica.mx/feed/" />
+<link rel="alternate" type="application/rss+xml" title="UnitecMx &raquo; RSS de los comentarios" href="//www.calidadacademica.mx/comments/feed/" />
+<link rel='stylesheet' id='storefront-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='//www.calidadacademica.mx/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="//www.calidadacademica.mx/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="//www.calidadacademica.mx/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<meta name="generator" content="WooCommerce 3.1.2" />
+<link rel='shortlink' href='//www.calidadacademica.mx/' />
+<link rel="alternate" type="application/json+oembed" href="//www.calidadacademica.mx/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.calidadacademica.mx%2F" />
+<link rel="alternate" type="text/xml+oembed" href="//www.calidadacademica.mx/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.calidadacademica.mx%2F&#038;format=xml" />
+<!-- Estilos inline JEAB 15-02-2017-->
+<style>/*Estilos del menu*/.nvct{position:fixed;z-index:100;top:0}.navContent{width:100vw;padding:10px;line-height:0}.navContent.navegador{height:52px;background-color:#fff;display:flex}.navContent.navegador a.logoNav{display:flex;flex:1;height:24px;margin-left:.3rem;margin-top:3px!important}.navContent.navegador a.logoNav img{width:5.625rem;height:auto}.navContent.navegador a.searchNav{right:1rem}.navContent.navegador a i{font-size:28px;color:#006fba;padding:.8rem}.navContent.navegador a:first-child i{padding-left:0}.navContent.searchNavbootom{margin-top:52px;background-color:rgba(0,111,186,.9)}.navContent.searchNavbootom a i{font-size:34px;color:#fff;padding:0 .5rem}.navContent.searchNavbootom .dropdown-toggle:after{content:none!important}.navContent.searchNavbootom div.comunidad{top:4px;margin-right:1rem}.navContent.searchNavbootom div.comunidad a span{margin-right:.5rem}.img-head{filter:brightness(.7);width:100%;z-index:200}.side-nav-header{position:relative;height:150px}.side-nav-header .controls{width:100%;height:60px;z-index:500;display:flex;flex-direction:row;align-content:center}.side-nav-header .controls div.logo{padding:0;display:flex;flex:1;justify-content:flex-start}.side-nav-header .controls div.logo a{line-height:inherit;padding:inherit}.side-nav-header .controls div.logo a img{width:120px;height:auto}.side-nav-header .controls span{margin:.5rem!important}.side-nav-header .controls span::before{color:#fff}.buscador{position:absolute;bottom:1rem;width:calc(100% - 32px);z-index:500;display:flex;margin-bottom:1px;border:1px solid #006fba;background:#fff!important;margin:0 1rem}.buscador .input-buscador{display:flex;align-items:center;flex:1}.buscador .input-buscadorinput[type=text]{position:relative;border:none;outline:0!important;padding:0 .5rem;min-height:25px;width:100%!important}.buscador .input-buscadorinput[type=text]:focus:not([readonly]).mySuccess{border:none!important;box-shadow:none!important}.buscador .input-buscadorinput[type=text].mySuccess{border:none!important;box-shadow:none!important}.buscador .input-buscadorinput[type=text]:focus:not([readonly]).myError{border:none!important;box-shadow:none!important}.buscador .input-buscadorinput[type=text].myError{border:none!important;box-shadow:none!important}.buscador .input-buscadorinput[type=text]:focus:not([readonly]).valid{border:none!important;box-shadow:none!important}.buscador .input-buscadorinput[type=text].valid{border:none!important;box-shadow:none!important}.buscador .iconos{display:flex;justify-content:center;align-items:center;width:32px}.buscador .iconos span{width:20px}.side-nav .side-nav-content .collapsible a{display:flex!important;align-items:center!important}</style><!-- Termina estilos inline  JEAB 15-02-2017-->
 </head>
+<body class="home page-template-default page page-id-13 custom-background right-sidebar woocommerce-active">
+<input type="hidden" name="h_posicion" id="h_posicion" value="">
+<div class="todoElBody">
+  <search-side-nav></search-side-nav>			
+    <app-modal></app-modal>
+  <modal-formulario-tradicional></modal-formulario-tradicional>
+  <modal-app-formulario-tradicional></modal-app-formulario-tradicional>
+  <input id="data_json_basura" type="hidden" value="0">
+  <input id="data_json_basura_email" type="hidden" value="0">
+  <input id="formApp" type="hidden">
+  <input id="data_json_basura" type="hidden" value="0">
+  <input id="data_json_basura_email" type="hidden" value="0">
+  <input id="formApp" type="hidden">
+  <input id="url_img_destacada" type="hidden" value="">
+  <input id="url_video_destacado" type="hidden" value="">
+<!-- Termina hidden para los json -->
+</div>
+<!-- <link rel='stylesheet' id='bootstrapcss-css'  href='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/css/vendor/min/bootstrap.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='mdb-css'  href='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/css/vendor/min/mdb.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-css'  href='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/font/generales/fa/css/font-awesome.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='material-icons-css'  href='https://fonts.googleapis.com/icon?family=Material+Icons' type='text/css' media='screen' />
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/js/skip-link-focus-fix.min.js?ver=20130115'></script>
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/js/vendor/min/jquery-3.1.1.min.js'></script>
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/js/vendor/min/jquery-ui.min.js'></script>
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/js/vendor/min/slideout.min.js'></script>
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/js/vendor/min/tether.min.js'></script>
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/js/vendor/min/bootstrap.min.js'></script>
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/js/vendor/min/mdb.min.js'></script>
+<script type='text/javascript' src='//www.calidadacademica.mx/wp-content/themes/temaunitec/assets/frontend/js/vendor/typeahead.js'></script> -->
 
-<body>
-    <!-- <search-side-nav></search-side-nav>
-    <app-modal>Loading...</app-modal> 
-    <modal-formulario-tradicional>Loading...</modal-formulario-tradicional> 
-    <modal-app-formulario-tradicional>Loading...</modal-app-formulario-tradicional> -->
+<link rel='stylesheet' id='bootstrapcss-css'  href='../recursos/bootstrap.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='mdb-css'  href='../recursos/mdb.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-css'  href='../recursos/font-awesome.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='material-icons-css'  href='https://fonts.googleapis.com/icon?family=Material+Icons' type='text/css' media='screen' />
+<script type='text/javascript' src='../recursos/skip-link-focus-fix.min.js?ver=20130115'></script>
+<script type='text/javascript' src='../recursos/min/jquery-3.1.1.min.js'></script>
+<script type='text/javascript' src='../recursos/min/jquery-ui.min.js'></script>
+<script type='text/javascript' src='../recursos/min/slideout.min.js'></script>
+<script type='text/javascript' src='../recursos/min/tether.min.js'></script>
+<script type='text/javascript' src='../recursos/min/bootstrap.min.js'></script>
+<script type='text/javascript' src='../recursos/min/mdb.min.js'></script>
+<script type='text/javascript' src='../recursos/min/typeahead.min.js'></script>
 
-    <!-- <search-side-nav></search-side-nav> -->
-
-    <!-- <app-formulario-login></app-formulario-login> -->
-    <input id="data_json_basura" type="hidden" value="0">
-    <input id="data_json_basura_email" type="hidden" value="0">
-    <input id="formApp" type="hidden">
-    <input id="url_img_destacada" type="hidden" value="assets/sidenav.jpg">
-    <input id="url_imagen_destacada" type="hidden" value="assets/sidenav.jpg">
-    <input id="url_video_destacado" type="hidden" value="https://www.youtube.com/watch?v=5bq7oDze0UI">
-    <!-- <input id="url_multimedia_formulario" type="hidden" value="//www.youtube.com/embed/ESLIW1la8LY"> -->
-    <!-- <input id="url_multimedia_formulario" type="hidden" value="//fast.wistia.net/embed/iframe/16vkktl67w?videoFoam=true&autoplay=true"> -->
-    <input id="url_multimedia_formulario" type="hidden" value="//www.youtube.com/embed/ESLIW1la8LY">
-    <input id="h_id_producto" type="hidden" value="233">
-    <input id="h_prellenado_formulario_pagina" type="hidden" value="true">
-    <input id="h_prellenado_formulario_tipo" type="hidden" value="">
-    <input type="hidden" value="" id="ttt">
-    <formularioGCS></formularioGCS>
-    <app-root></app-root>
-    <!-- <search-side-nav></search-side-nav> -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<script type='text/javascript' src='/lp_web/landing_web/inline.bundle.js'></script>
+<script type='text/javascript' src='/lp_web/landing_web/polyfills.bundle.js'></script>
+<script type='text/javascript' src='/lp_web/landing_web/main.bundle.js'></script>
+<div style="display:block; position: absolute; bottom: 0px; width: 100%; text-align: center;    color: #757575;z-index: 9999999;">
+    v 1.0.2
+</div>
 </body>
-<script>
-</script>
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal_frm_app">
-    Formulario Login Bliblioteca
-</button> -->
-
-<!-- Button trigger modal
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#buscador">
-    Buscador Unitec
-</button> -->
-
 </html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+
+Served from: www.calidadacademica.mx @ 2018-05-03 11:19:42 by W3 Total Cache
+-->
