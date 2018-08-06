@@ -296,15 +296,18 @@ export class frmEstudioInteresComponent
         jQuery("#formApp").data("nivelInteres", this.getNivelInteres(arrayCampusIdDynamics[0].linea));
         jQuery("#formApp").data("modalidad", arrayCampusIdDynamics[0].modalidad);
         //console.log(arrayCampusIdDynamics);
-        for(var i in arrayNombresCortos) {
 
+        for(var i in arrayNombresCortos) {
+         // for(let i=0 ; i <= arrayNombresCortos.length ; i++ ){
             campus = this.campusNombreLargo(arrayNombresCortos[i]);
             let iddiv = "div_campus" + i;
+            alert("Este es el campus1 : "+campus);
+            alert("Este es el campus: "+arrayNombresCortos[i]);
             jQuery("#secCampus").append('<div class="division-div" id="' + iddiv + '" #div_campus style="padding-bottom: 10px;cursor:pointer;" value="' 
-                                + arrayNombresCortos[i] 
+                                + campus
                                 + '" ' 
                                 + '>' 
-                                + campus
+                                + arrayNombresCortos[i]
                                 + '</div>');
             //Seteamos el listener  
             let one = i;

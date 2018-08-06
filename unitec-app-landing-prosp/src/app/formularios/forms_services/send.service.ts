@@ -13,8 +13,8 @@ declare var ga: any;
 export class sendService {
   ciclo_default = "";
   urlreferrer: any = window.location;
-  private url_ajax_php = "/lp_web/testvocacional_web/sendScribe.php";
-  private url_ajax_php2 = "/lp_web/testvocacional_web/sendScribe2.php";
+  private url_ajax_php = "/lp_web/sendScribe.php";
+  private url_ajax_php2 = "/lp_web/sendScribe2.php";
   private url_ajax_micro_php = "/lp_web/sendMicroScribe.php";
   //private url_ajax_php = "/wp-content/phpServeApp/backend1.php";
   constructor(private formCookieService: formCookiesService, private readJsonService: readJson, private getJsonService:getJson) {}
@@ -264,7 +264,6 @@ if (isMobile) {
      var predCel = jQuery("#formApp").data("celular").substring(0,2);
      var TelefonoCelularPredictivo = '9045' + jQuery("#formApp").data("celular");
 
-
      if(predCel == 55){
        TelefonoCelularPredictivo = '9044'+jQuery("#formApp").data("celular");
      }else{
@@ -293,10 +292,22 @@ if (isMobile) {
       
       }
 
+       var telefonoCasa = jQuery("#formApp").data("telcasa");
+       var predCasa = jQuery("#formApp").data("telcasa").substring(0,2); 
+
+      if(predCasa == 55){
+       var TelefonoCasaPredictivo = '9'+jQuery("#formApp").data("telcasa");
+        }else{
+       var TelefonoCasaPredictivo = '901'+jQuery("#formApp").data("telcasa");
+        }
 
       jQuery('#formApp').data("telefonopredictivo",TelefonoCelularPredictivo);
       jQuery('#formApp').data("telefonopredictivo2",TelefonoPredictivo_22);
       jQuery("#formApp").data("nivelInteres",nivel_nodo_encontrado[0].crmit_codigounico);
+
+      jQuery('#formApp').data("telefonocasa", telefonoCasa);
+      jQuery("#formApp").data("telefonocasapredictivo", TelefonoCasaPredictivo);
+
       /* Nuevos de alfonso */
       jQuery("#formApp").data("GUIDNivelInteres",id_nivel_solvis);
       jQuery("#formApp").data("GUIDModalidad",id_modalidad_solvis);

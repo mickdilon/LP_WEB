@@ -952,7 +952,7 @@ export class frmLineasNegocioAppComponent {
                 '<div class="col-6 col-cuadros-contenedor div-padre-campus" id="' +
                   iddiv +
                   '" #div_campus value="' +
-                  arraymostrarcampus[0].crmi_name +
+                  campus +
                   '" ' +
                   ">" +
                   '<div class="col-12 col-cuadros-campus">' +

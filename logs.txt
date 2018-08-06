@@ -1,0 +1,92 @@
+
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"prueba", "ApellidoPaterno":"prueba", "ApellidoMaterno":"prueba", "CorreoElectronico":"prueba@hotmail.com", "NumeroCelular":"5565634654", "TelefonoCelularPredictivo":"", "TelefonoCelularPredictivo2":"", "Estado":"", "Campus":"", "Modalidad":"", "Nivel":"", "Carrera":"", "Ciclo":"", "OtroCampus":"", "Cookie":"", "Banner":"", "FuenteObtencion":"WEB", "Prioridad":"", "Attemp":"", "LeadID":"", "CID":"", "CanalPreferido":"VOZ"}<br><br>curl_response: Operation failed.  Label: Update Lead Regla 5, Name: leadUpdate5, Message: 15:Unable to format the data '' for lead.crmit_attemp. Input string was not in a correct format. 
+
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"prueba", "ApellidoPaterno":"prueba", "ApellidoMaterno":"prueba", "CorreoElectronico":"prueba@hotmail.com", "NumeroCelular":"5554346646", "TelefonoCelularPredictivo":"", "TelefonoCelularPredictivo2":"", "Estado":"", "Campus":"", "Modalidad":"", "Nivel":"", "Carrera":"", "Ciclo":"", "OtroCampus":"", "Cookie":"", "Banner":"", "FuenteObtencion":"WEB", "Prioridad":"", "Attemp":"", "LeadID":"", "CID":"", "CanalPreferido":"VOZ"}<br><br>curl_response: Operation failed.  Label: Update Lead Regla 5, Name: leadUpdate5, Message: 15:Unable to format the data '' for lead.crmit_attemp. Input string was not in a correct format. 
+
+<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"prueba", "ApellidoPaterno":"prueba", "ApellidoMaterno":"prueba", "CorreoElectronico":"prueba@hotmail.com", "NumeroCelular":"5563463463"}<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"prueba", "ApellidoPaterno":"prueba", "ApellidoMaterno":"prueba", "CorreoElectronico":"prueba@hotmail.com", "NumeroCelular":"5563463463", "TelefonoCelularPredictivo":"90445563463463", "TelefonoCelularPredictivo2":"963463463", "Estado":"Coahuila", "Campus":"LOS REYES", "Modalidad":"PRESENCIAL", "Nivel":"LICENCIATURA", "Carrera":"ADMINISTRACI\u00d3N DE EMPRESAS", "Ciclo":"18-3", "OtroCampus":"LOS REYES", "Cookie":"7d5839a4d29c5a920b44389984a24117", "Banner":"ASPIRANTES LIC", "FuenteObtencion":"WEB", "Prioridad":"5", "Attemp":"1", "LeadID":"", "CID":"", "CanalPreferido":"VOZ"}<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"rolando", "ApellidoPaterno":"arias", "ApellidoMaterno":"ariasnj", "CorreoElectronico":"rolandarias@gmail.com", "NumeroCelular":"5540500455"}<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"ROXANI", "ApellidoPaterno":"REYES", "ApellidoMaterno":"RUMBO", "CorreoElectronico":"rosa.anibal@gmail.com", "NumeroCelular":"5550322182"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"", "ApellidoPaterno":"", "ApellidoMaterno":"", "CorreoElectronico":"", "NumeroCelular":"", "TelefonoCelularPredictivo":"", "TelefonoCelularPredictivo2":"", "Estado":"", "Campus":"", "Modalidad":"", "Nivel":"", "Carrera":"", "Ciclo":"", "OtroCampus":"", "Cookie":"", "Banner":"", "FuenteObtencion":"WEB", "Prioridad":"", "Attemp":"", "LeadID":"", "CID":"", "CanalPreferido":"VOZ"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"BRENDA IRIS", "ApellidoPaterno":"ADAME", "ApellidoMaterno":"VILLEGAS", "CorreoElectronico":"brendeichon.av@hotmail.com", "NumeroCelular":"7441650956"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"BRENDA IRIS", "ApellidoPaterno":"ADAME", "ApellidoMaterno":"VILLEGAS", "CorreoElectronico":"brendeichon.av@hotmail.com", "NumeroCelular":"7441650956"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"alfonsoal", "ApellidoPaterno":"silvaal", "ApellidoMaterno":"hidalgoal", "CorreoElectronico":"silvaal@alfonso.com", "NumeroCelular":"5521240070"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"alfonsoam", "ApellidoPaterno":"silvaam", "ApellidoMaterno":"hidalgoam", "CorreoElectronico":"silvaam@alfonso.com", "NumeroCelular":"5521240071"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"alfonsoal", "ApellidoPaterno":"silvaal", "ApellidoMaterno":"hidalgoal", "CorreoElectronico":"silvaal@alfonso.com", "NumeroCelular":"5521240075"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"alfonsoal", "ApellidoPaterno":"silvaal", "ApellidoMaterno":"hidalgoal", "CorreoElectronico":"silvaal@alfonso.com", "NumeroCelular":"5521240075", "TelefonoCelularPredictivo":"90445521240075", "TelefonoCelularPredictivo2":"921240075", "Estado":"Ciudad de M\u00e9xico", "Campus":"LOS REYES", "Modalidad":"PRESENCIAL", "Nivel":"LICENCIATURA", "Carrera":"ADMINISTRACI\u00d3N DE EMPRESAS", "Ciclo":"18-3", "OtroCampus":"LOS REYES", "Cookie":"", "Banner":"ASPIRANTES LIC", "FuenteObtencion":"WEB", "Prioridad":"5", "Attemp":"1", "LeadID":"", "CID":"", "CanalPreferido":"VOZ"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"prueba", "ApellidoPaterno":"prueba", "ApellidoMaterno":"prueba", "CorreoElectronico":"prueba@hotmail.com", "NumeroCelular":"5563463464"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"prueba", "ApellidoPaterno":"prueba", "ApellidoMaterno":"prueba", "CorreoElectronico":"prueba@hotmail.com", "NumeroCelular":"5563463464", "TelefonoCelularPredictivo":"90445563463464", "TelefonoCelularPredictivo2":"963463464", "Estado":"Baja California Norte", "Campus":"LOS REYES", "Modalidad":"PRESENCIAL", "Nivel":"LICENCIATURA", "Carrera":"ADMINISTRACI\u00d3N DE EMPRESAS", "Ciclo":"18-3", "OtroCampus":"LOS REYES", "Cookie":"", "Banner":"ASPIRANTES LIC", "FuenteObtencion":"WEB", "Prioridad":"5", "Attemp":"1", "LeadID":"", "CID":"", "CanalPreferido":"VOZ"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"prueba", "ApellidoPaterno":"prueba", "ApellidoMaterno":"prueba", "CorreoElectronico":"prueba@hotmail.com", "NumeroCelular":"5563634734"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"alfonsoao", "ApellidoPaterno":"silvaao", "ApellidoMaterno":"hidalgoao", "CorreoElectronico":"silvaao@alfonso.com", "NumeroCelular":"5521240081"}<br><br>curl_response: Cannot run Map 'Imported - Final Todas las reglas de Update' in the passed in Solution 'Insert' because it is disabled, invalid or deleted.
+<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"alfonsoao", "ApellidoPaterno":"silvaao", "ApellidoMaterno":"hidalgoao", "CorreoElectronico":"silvaao@alfonso.com", "NumeroCelular":"5521240083"}<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"alfonsoap", "ApellidoPaterno":"silvaap", "ApellidoMaterno":"hidalgoap", "CorreoElectronico":"silvaap@alfonso.com", "NumeroCelular":"5521240086"}<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"alfonsoaq", "ApellidoPaterno":"silvaaq", "ApellidoMaterno":"hidalgoaq", "CorreoElectronico":"silvaaq@alfonso.com", "Telefono":"5521240088"}<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"alfonsoar", "ApellidoPaterno":"silvaar", "ApellidoMaterno":"hidalgoar", "CorreoElectronico":"silvaar@alfonso.com", "Telefono":"5521240089"}<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"alfonsoar", "ApellidoPaterno":"silvaar", "ApellidoMaterno":"hidalgoar", "CorreoElectronico":"silvaar@alfonso.com", "Telefono":"5521240089", "TelefonoPredictivo":"90445521240089", "TelefonoCasaPredictivo":"921240089", "Estado":"Estado de M\u00e9xico", "Campus":"LOS REYES", "Modalidad":"PRESENCIAL", "Nivel":"LICENCIATURA", "Carrera":"DERECHO", "Ciclo":"18-3", "OtroCampus":"LOS REYES", "Cookie":"", "Banner":"ASPIRANTES LIC", "FuenteObtencion":"WEB", "Prioridad":"5", "Attemp":"1", "LeadID":"", "CID":"", "CanalPreferido":"VOZ"}<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"alfonsoat", "ApellidoPaterno":"silvaat", "ApellidoMaterno":"hidalgoat", "CorreoElectronico":"silvaat@alfonso.com", "Telefono":"5521240090"}<br>
+¡Operación exitosa!<br>Datos: {"Nombre":"alfonsoat", "ApellidoPaterno":"silvaat", "ApellidoMaterno":"hidalgoat", "CorreoElectronico":"silvaat@alfonso.com", "Telefono":"5521240090", "TelefonoPredictivo":"90445521240090", "TelefonoCasaPredictivo":"921240090", "Estado":"Ciudad de M\u00e9xico", "Campus":"LOS REYES", "Modalidad":"PRESENCIAL", "Nivel":"LICENCIATURA", "Carrera":"ADMINISTRACI\u00d3N DE EMPRESAS", "Ciclo":"18-3", "OtroCampus":"LOS REYES", "Cookie":"", "Banner":"ASPIRANTES LIC", "FuenteObtencion":"WEB", "Prioridad":"5", "Attemp":"1", "LeadID":"", "CID":"", "CanalPreferido":"VOZ"}<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"", "ApellidoPaterno":"", "ApellidoMaterno":"", "CorreoElectronico":"", "Telefono":"", "TelefonoPredictivo":"", "TelefonoCasaPredictivo":"", "Estado":"", "Campus":"", "Modalidad":"", "Nivel":"", "Carrera":"", "Ciclo":"", "OtroCampus":"", "Cookie":"", "Banner":"", "FuenteObtencion":"WEB", "Prioridad":"", "Attemp":"", "LeadID":"", "CID":"", "CanalPreferido":"VOZ", "GUIDUsuario":"", "GUIDCampus":"", "GUIDCarrera":"", "GUIDCiclo":"", "GUIDModalidad":"", "GUIDNivelInteres":""}<br><br>curl_response: The following exceptions occurred in Map named 'New Flow - Final Todas las reglas de Update 2' in the passed in Solution 'Insert':
+Prioridad:Exception Type : FormatException 
+Message : Input string was not in a correct format. 
+StackTrace :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.ConvertToType(DataTypes dataType, String value) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 107
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.Convert(RequestDataContract dataContract, String solutionName, String mapName, Dictionary`2 requestDataLookups) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 52 
+
+Attemp:Exception Type : FormatException 
+Message : Input string was not in a correct format. 
+StackTrace :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.ConvertToType(DataTypes dataType, String value) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 107
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.Convert(RequestDataContract dataContract, String solutionName, String mapName, Dictionary`2 requestDataLookups) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 52 
+
+
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"", "ApellidoPaterno":"", "ApellidoMaterno":"", "CorreoElectronico":"", "Telefono":"", "TelefonoPredictivo":"", "TelefonoCasaPredictivo":"", "Estado":"", "Campus":"", "Modalidad":"", "Nivel":"", "Carrera":"", "Ciclo":"", "OtroCampus":"", "Cookie":"", "Banner":"", "FuenteObtencion":"WEB", "Prioridad":"", "Attemp":"", "LeadID":"", "CID":"", "CanalPreferido":"VOZ", "GUIDUsuario":"", "Usuario":"", "GUIDCampus":"", "GUIDCarrera":"", "GUIDCiclo":"", "GUIDModalidad":"", "GUIDNivelInteres":""}<br><br>curl_response: The following exceptions occurred in Map named 'New Flow - Final Todas las reglas de Update 2' in the passed in Solution 'Insert':
+Prioridad:Exception Type : FormatException 
+Message : Input string was not in a correct format. 
+StackTrace :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.ConvertToType(DataTypes dataType, String value) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 107
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.Convert(RequestDataContract dataContract, String solutionName, String mapName, Dictionary`2 requestDataLookups) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 52 
+
+Attemp:Exception Type : FormatException 
+Message : Input string was not in a correct format. 
+StackTrace :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.ConvertToType(DataTypes dataType, String value) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 107
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.Convert(RequestDataContract dataContract, String solutionName, String mapName, Dictionary`2 requestDataLookups) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 52 
+
+
+<br>
+<br>Fallo la Operación<br>httpCode: 400<br><br>Datos: {"Nombre":"", "ApellidoPaterno":"", "ApellidoMaterno":"", "CorreoElectronico":"", "Telefono":"", "TelefonoPredictivo":"", "TelefonoCasaPredictivo":"", "Estado":"", "Campus":"", "Modalidad":"", "Nivel":"", "Carrera":"", "Ciclo":"", "OtroCampus":"", "Cookie":"", "Banner":"", "FuenteObtencion":"WEB", "Prioridad":"", "Attemp":"", "LeadID":"", "CID":"", "CanalPreferido":"VOZ", "GUIDUsuario":"", "Usuario":"", "GUIDCampus":"", "GUIDCarrera":"", "GUIDCiclo":"", "GUIDModalidad":"", "GUIDNivelInteres":""}<br><br>curl_response: The following exceptions occurred in Map named 'New Flow - Final Todas las reglas de Update 2' in the passed in Solution 'Insert':
+Prioridad:Exception Type : FormatException 
+Message : Input string was not in a correct format. 
+StackTrace :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.ConvertToType(DataTypes dataType, String value) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 107
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.Convert(RequestDataContract dataContract, String solutionName, String mapName, Dictionary`2 requestDataLookups) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 52 
+
+Attemp:Exception Type : FormatException 
+Message : Input string was not in a correct format. 
+StackTrace :    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.ConvertToType(DataTypes dataType, String value) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 107
+   at Scribe.Core.BusinessObjectServer.DataContracts.RequestDataContract.Convert(RequestDataContract dataContract, String solutionName, String mapName, Dictionary`2 requestDataLookups) in C:\BuildAgent\work\26ca880bab0ff6fc\Core\Trunk\Code\BusinessObjectServer.Web\DataContracts\RequestDataContract.cs:line 52 
+
+
+<br>

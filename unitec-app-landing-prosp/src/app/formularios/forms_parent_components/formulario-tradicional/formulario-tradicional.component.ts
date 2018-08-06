@@ -139,6 +139,7 @@ export class formularioTradicionalComponent implements OnInit {
         frm_mail: ["", Validators.compose([userValidations.validaEmail])],
         frm_tel_casa: ["", Validators.compose([userValidations.validaTelCasa])],
         frm_celular: ["", Validators.compose([userValidations.validaCelular])],
+        
         frm_contra1: ["", Validators.compose([userValidations.validaContrasena])],
         frm_contra2: ["", Validators.compose([userValidations.validaConfirmaContrasena])]
       }),
@@ -328,6 +329,7 @@ export class formularioTradicionalComponent implements OnInit {
         let amaterno = jQuery("#frm_amaterno").val();
         let email = jQuery("#frm_mail").val();
         let celular = jQuery("#frm_celular").val();
+        let telcasa = jQuery("#frm_tel_casa").val();
         let tipoRegistro = jQuery("#frm_tipo_registro").val();
 
         // Variable de ejemplo para simular el CID by SRP
@@ -350,10 +352,17 @@ export class formularioTradicionalComponent implements OnInit {
           amaterno
         );
         this.formCookieService.appendCookieValue("c_form_data", "email", email);
+
         this.formCookieService.appendCookieValue(
           "c_form_data",
           "celular",
           celular
+        );
+
+        this.formCookieService.appendCookieValue(
+          "c_form_data",
+          "telcasa",
+          telcasa
         );
         this.formCookieService.appendCookieValue(
           "c_form_data",
@@ -382,7 +391,7 @@ export class formularioTradicionalComponent implements OnInit {
         jQuery("#formApp").data("amaterno", amaterno);
         jQuery("#formApp").data("email", email);
         jQuery("#formApp").data("celular", celular);
-        jQuery("#formApp").data("telcasa", jQuery("#frm_tel_casa").val());
+        jQuery("#formApp").data("telcasa", telcasa);
         jQuery("#formApp").data("frm_contra1", jQuery("#frm_tel_casa").val())
         jQuery("#formApp").data("tipoRegistro", tipoRegistro);
 

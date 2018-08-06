@@ -5,8 +5,10 @@ function enviar_datos_2(){
   global $urlTimeStampClick;   
 
   $service_url = 'https://endpoint.scribesoft.com/v1/orgs/27038/requests/7032?accesstoken=8d0e3e43-a352-409a-bbee-401e2ee99b9f'; 
+//  $service_url2 = 'https://endpoint.scribesoft.com/v1/orgs/27038/requests/7618?accesstoken=8d0e3e43-a352-409a-bbee-401e2ee99b9f';
 
   $curl = curl_init($service_url);
+ // $curl2 = curl_init($service_url2);
   
   $esX = explode('*',$_POST['estado']);
   $estado = $esX[0];
@@ -28,9 +30,13 @@ function enviar_datos_2(){
         'ApellidoPaterno' => htmlspecialchars($_POST['apaterno']),
         'ApellidoMaterno' => htmlspecialchars($_POST['amaterno']),
         'CorreoElectronico' => htmlspecialchars($_POST['email']),
+
         'Telefono' => htmlspecialchars($_POST['celular']),
         'TelefonoPredictivo' => htmlspecialchars($_POST['telefonopredictivo']),
         'tel2predictivo' => htmlspecialchars($_POST['telefonopredictivo2']),
+        'TelefonoCasa' => htmlspecialchars($_POST['telefonocasa']),
+        'TelefonoCasaPredictivo' => htmlspecialchars($_POST['telefonocasapredictivo']),
+
         'Estado' => htmlspecialchars($estado),
         'GUIDEstado' => htmlspecialchars($estadoGUID),
         'FuenteObtencion'=>"WEB",
@@ -58,7 +64,8 @@ function enviar_datos_2(){
         'GUIDCiclo' => htmlspecialchars($_POST['GUIDCiclo']),  
         'GUIDModalidad' => htmlspecialchars($_POST['GUIDModalidad']),  
         'GUIDNivelInteres' => htmlspecialchars($_POST['GUIDNivelInteres']),
-        'Team' => htmlspecialchars($_POST['team'])  
+        'Team' => htmlspecialchars($_POST['team']),
+        'Contrasena' => htmlspecialchars($_POST['Contrasena'])  
   ); 
   
 
@@ -74,19 +81,40 @@ function enviar_datos_2(){
     'content-type: application/json',                                                                                
     'content-length: '.strlen($curl_post_data) )                                                                       
   );
-  
+
+/*  curl_setopt($curl2, CURLOPT_POST, true);
+  curl_setopt($curl2, CURLOPT_CUSTOMREQUEST, "POST"); 
+  curl_setopt($curl2, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($curl2, CURLOPT_POSTFIELDS, $curl_post_data);
+  curl_setopt($curl2, CURLOPT_HTTPHEADER, array(                                                                          
+    'content-type: application/json',                                                                                
+    'content-length: '.strlen($curl_post_data) )                                                                       
+  );*/
+
+
+
+
   $curl_response = curl_exec($curl);
   $cInfo = curl_getinfo($curl);
   $cError = curl_error($curl);
-  $httpCode = $cInfo["http_code"];
- 
+
+
+    //Variables para bitacora
+//    $curl_response2 = curl_exec($curl2);
+ //   $cInfo2 = curl_getinfo($curl2);
+ //   $cError2 = curl_error($curl2);
+  
+    $httpCode = $cInfo["http_code"];
   if ($curl_response === false) {
     curl_close($curl);    
     echo "cError: $cError<br><br>";
+    echo "cError: $cError2<br><br>";
     echo "cInfo: ";
-    print_r ($cInfo);    
+    print_r ($cInfo);
+    print_r ($cInfo2);    
     $logfile = fopen("logs.txt", "a") or die("Unable to open file!");
     $txt = "cError: $cError<br><br>".'<br><br>error occured during curl exec.';
+  //  $txt .= "cError: $cError2<br><br>".'<br><br>error occured during curl exec.';
     fwrite($logfile, "\n". $txt);
     fclose($logfile);
     die('<br><br>error occured during curl exec.');
@@ -94,6 +122,7 @@ function enviar_datos_2(){
   else {
  
     curl_close($curl);
+    curl_close($curl2);
     switch ($httpCode) {
  
       case 200:
@@ -112,6 +141,7 @@ function enviar_datos_2(){
         $resultado .= "httpCode: $httpCode<br><br>";
         $resultado .= "Datos: ".str_replace('","', '", "', $curl_post_data)."<br><br>";
         $resultado .= "curl_response: $curl_response<br>";
+       // $resultado .= "curl_response: $curl_response2<br>";
         echo $resultado;
         $logfile = fopen("logs.txt", "a") or die("Unable to open file!");
         $txt = $resultado;
@@ -125,13 +155,25 @@ function enviar_datos_2(){
         $resultado .= "httpCode: $httpCode<br><br>";
         $resultado .= "Datos: ".str_replace('","', '", "', $curl_post_data)."<br><br>";
         $resultado .= "curl_response: $curl_response<br><br>";
+       // $resultado .= "curl_response: $curl_response2<br><br>";
         $resultado .= "cError: $cError<br><br>";
+       // $resultado .= "cError: $cError2<br><br>";
         echo $resultado;        
+
         $decoded = json_decode($curl_response);
         $logfile = fopen("logs.txt", "a") or die("Unable to open file!");
         $txt = $resultado.$decoded;
         fwrite($logfile, "\n". $txt);
         fclose($logfile);
+
+        /*$decoded = json_decode($curl_response2);
+        $logfile = fopen("logs.txt", "a") or die("Unable to open file!");
+        $txt = $resultado.$decoded;
+        fwrite($logfile, "\n". $txt);
+        fclose($logfile);
+*/
+        
+        
         if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') {
           die('error occured: ' . $decoded->response->errormessage);
         } 
